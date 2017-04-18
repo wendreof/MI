@@ -1,0 +1,148 @@
+/*
+ * Start Bootstrap - Full Width Pics (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+	background: url('../img/background-wallpaper-1920x1080.jpg') no-repeat center center scroll;
+    padding:150px 0;
+    margin-bottom: -100px;
+}
+button#link_cadastro{
+    position: relative;
+    float: right;
+
+}
+input#input_css {
+
+    padding-left: 10px;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #fff;
+    -moz-box-shadow: 1px 1px 2px #fff;
+    -webkit-box-shadow: 1px 1px 2px #fff;
+    background: #fff;
+    border:1px ridge rgba(0,0,0,.2);
+    height: 40px;
+    text-align: center;
+}input#input_entrar {
+     margin-left: 50px;
+     padding-left: 10px;
+     border-radius:2px;
+     -moz-border-radius:2px;
+     -webkit-border-radius:4px;
+     box-shadow: 1px 1px 2px #fff;
+     -moz-box-shadow: 1px 1px 2px #fff;
+     -webkit-box-shadow: 1px 1px 2px #fff;
+     background: #fff;
+     border:1px ridge rgba(0,0,0,.2);
+     height: 40px;
+     text-align: center;
+ }
+ input#remember{
+     padding-left: 20px;
+ }
+ select#estado{
+     text-align: center;
+     border-radius:2px;
+     -moz-border-radius:2px;
+     -webkit-border-radius:4px;
+     box-shadow: 1px 1px 2px #fff;
+     -moz-box-shadow: 1px 1px 2px #fff;
+     -webkit-box-shadow: 1px 1px 2px #fff;
+     background: #fff;
+     border:1px ridge rgba(0,0,0,.2);
+     min-width: 360px;
+     height: 40px;
+
+ }
+.form-signup-login{
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #5cb85c;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: auto;
+}
+.form-signup{
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #5cb85c;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    height: auto;
+}
+div#box-login{
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #5cb85c;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding:0 20px;
+    box-sizing: border-box;
+    height: 190px;
+
+}
+.image-bg-fixed-height {
+	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+    height: 450px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+footer {
+
+    background: grey;
+    height: 200px;
+
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
