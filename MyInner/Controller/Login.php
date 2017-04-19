@@ -1,7 +1,5 @@
 <?php
-echo $_POST['email_username'];
-echo $_POST['password_user'];
-/*
+
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
@@ -26,7 +24,7 @@ if (mysqli_num_rows($login) > 0) {
 
 
     // Cria cookie para lembrar do email
-    setcookie("email", $_GET["email_username"], time()+3600);
+    setcookie("email", $_POST["email_username"], time()+3600);
 
 
     // Redireciona para página
@@ -39,5 +37,5 @@ if (mysqli_num_rows($login) > 0) {
 }else{
     echo "estou aqui";
 }
-*/
+
 ?>
