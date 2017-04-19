@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 include("ConnectionFactory.php");
 $email_username = $_POST['email_username'];
-$password = ($_POST['password_user']); //md5
+$password = md5($_POST['password_user']);
 
 
 
@@ -24,7 +24,7 @@ if (mysqli_num_rows($login) > 0) {
 
 
     // Cria cookie para lembrar do email
-    setcookie("email", $_GET["email_username"], time()+3600);
+    setcookie("email", $_POST["email_username"], time()+3600);
 
 
     // Redireciona para página
