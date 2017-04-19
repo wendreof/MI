@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="91be1203-2a2b-4881-9517-b8259a3f6498" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/Controller/Login.php" afterPath="$PROJECT_DIR$/MyInner/Controller/Login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/View/Dashboard_MyInner.php" afterPath="$PROJECT_DIR$/MyInner/View/Dashboard_MyInner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/Controller/Register.php" afterPath="$PROJECT_DIR$/MyInner/Controller/Register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php" afterPath="$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,16 +16,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sing_Up_MyInner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="25" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Sign_In_MyInner.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,28 +29,48 @@
       <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyInner/Controller/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Register.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Sing_Up_MyInner.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="71" column="91" lean-forward="false" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyInner/Controller/Register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard_MyInner.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dashboard_MyInner.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyInner/View/Dashboard_MyInner.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="full-width-pics.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -86,15 +97,15 @@
         <option value="$PROJECT_DIR$/MyInner/Controller/Sign_In_MyInner.php" />
         <option value="$PROJECT_DIR$/MyInner/Controller/ConnectionFactory.php" />
         <option value="$PROJECT_DIR$/MyInner/Controller/Sing_Up_MyInner.php" />
-        <option value="$PROJECT_DIR$/MyInner/Controller/Register.php" />
         <option value="$PROJECT_DIR$/MyInner/View/footer.php" />
-        <option value="$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php" />
         <option value="$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php" />
         <option value="$PROJECT_DIR$/MyInner/View/header.php" />
         <option value="$PROJECT_DIR$/MyInner/View/Delete_User_MyInner.php" />
         <option value="$PROJECT_DIR$/MyInner/View/Update_User_MyInner.php" />
-        <option value="$PROJECT_DIR$/MyInner/Controller/Login.php" />
         <option value="$PROJECT_DIR$/MyInner/View/Dashboard_MyInner.php" />
+        <option value="$PROJECT_DIR$/MyInner/Controller/Login.php" />
+        <option value="$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php" />
+        <option value="$PROJECT_DIR$/MyInner/Controller/Register.php" />
       </list>
     </option>
   </component>
@@ -324,18 +335,17 @@
       <workItem from="1492477019394" duration="218000" />
       <workItem from="1492477519580" duration="141000" />
       <workItem from="1492525508799" duration="203000" />
-      <workItem from="1492620012272" duration="1846000" />
+      <workItem from="1492620012272" duration="6959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55543000" />
+    <option name="totallyTimeSpent" value="60656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13323572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13323572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -643,14 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -703,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="25" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyInner/View/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -743,22 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/Controller/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/Controller/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -771,6 +749,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/Controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="71" column="91" lean-forward="false" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/Controller/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -9,11 +9,11 @@
 
             <section class="col-lg-12">
 
-                <form action="../Controller/Register.php" method="get" class="form-signup-login" name="formlogin">
+                <form action="../Controller/Register.php" method="post" class="form-signup-login" name="formlogin">
                     <h2>Login</h2>
-                    <br><input type="text" id="input_css" name="user_name" id="txt_name" maxlength="255" size="50" required placeholder="   USER NAME"> <br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
-                    <br><input type="text" id="input_css" name="email_user" id="txt_name" maxlength="255" size="50" required placeholder="   EMAIL"><br>
-                    <br> <input type="password" id="input_css" name="password_user" id="txt_name" maxlength="8" size="50" required placeholder="   PASSWORD"><br>
+                    <br><input type="text" id="input_css" name="user_name" id="txt_name" maxlength="10" size="50" required placeholder="USER NAME"> <br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
+                    <br><input type="text" id="input_css" name="email_user" id="txt_name" maxlength="255" size="50" required placeholder="EMAIL"><br>
+                    <br> <input type="password" id="input_css" name="password_user" id="txt_name" maxlength="8" size="50" required placeholder="PASSWORD"><br>
                     <br>
                     <div class="form-group">
 
@@ -22,12 +22,10 @@
                 <hr>
                 <br>
 
-
-                <form action="../Controller/Register.php" method="get" class="form-signup" name="formuser">
                     <h2>User</h2>
                     <div class="form-group">
-                        <input type="text" id="input_css" name="name_user" id="txt_name" maxlength="15" size="50" required placeholder="   NOME "><br>
-                        <br><input type="text" id="input_css" name="sobrenome_user" id="sobrenome" maxlength="15" size="50" required placeholder="   SOBRENOME"><br>
+                        <input type="text" id="input_css" name="name_user" id="txt_name" maxlength="15" size="50" required placeholder="NOME "><br>
+                        <br><input type="text" id="input_css" name="sobrenome_user" id="sobrenome" maxlength="15" size="50" required placeholder="SOBRENOME"><br>
                         <label>SEXO </label><br>
                         <input type="radio" id="input_css" name="sexo_user" value="M"/ checked="true"><label for="btmasculino">&nbsp; Masculino</label>
                         <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="btfeminino">&nbsp; Feminino</label>
@@ -71,7 +69,7 @@
 
                             </select>
                         &nbsp<br><input type="text" id="input_css" name="pais_user" id="txt_name" size="50"  placeholder="PAIS" required><br>
-                        <p><input type="checkbox" name="terms_acept" id="txt_name" value="true" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
+                        <p><input type="checkbox" name="terms_acept" id="txt_name" value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
 
                     </div>
                     <div class="form-group">
