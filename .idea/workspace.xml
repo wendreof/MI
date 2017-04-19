@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91be1203-2a2b-4881-9517-b8259a3f6498" name="Default" comment="" />
+    <list default="true" id="91be1203-2a2b-4881-9517-b8259a3f6498" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyInner/View/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyInner/View/header.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MyInner/Factory.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/css/Template_MyInner.css" afterPath="$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/css/Template_MyInner.min.css" afterPath="$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/css/full-width-pics.css" afterPath="$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/css/index.css" afterPath="$PROJECT_DIR$/MyInner/Assets/css/index.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/css/index.min.css" afterPath="$PROJECT_DIR$/MyInner/Assets/css/index.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/css/stylish-portfolio.css" afterPath="$PROJECT_DIR$/MyInner/Assets/css/stylish-portfolio.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/css/font-awesome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/css/font-awesome.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/animated.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/bordered-pulled.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/core.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/fixed-width.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/font-awesome.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/icons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/larger.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/list.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/mixins.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/path.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/rotated-flipped.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/stacked.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/less/variables.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_animated.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_core.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_fixed-width.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_icons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_larger.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_list.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_mixins.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_path.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_stacked.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/MyInner/Assets/font-awesome/scss/font-awesome.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/MyInner/Assets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/MyInner/Assets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/MyInner/Assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/MyInner/Assets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/MyInner/Assets/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/MY.PNG" afterPath="$PROJECT_DIR$/MyInner/Assets/img/MY.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/My_Inner.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/My_Inner.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/background-wallpaper-1920x1080.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/background-wallpaper-1920x1080.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/bg.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/callout.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/callout.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/portfolio-1.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/portfolio-1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/portfolio-2.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/portfolio-2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/portfolio-3.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/portfolio-3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/View/img/portfolio-4.jpg" afterPath="$PROJECT_DIR$/MyInner/Assets/img/portfolio-4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/js/Template_MyInner.js" afterPath="$PROJECT_DIR$/MyInner/Assets/js/Template_MyInner.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/js/Template_MyInner.min.js" afterPath="$PROJECT_DIR$/MyInner/Assets/js/Template_MyInner.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/js/Template_MyInner_jquery.js" afterPath="$PROJECT_DIR$/MyInner/Assets/js/Template_MyInner_jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/js/bootstrap.js" afterPath="$PROJECT_DIR$/MyInner/Assets/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/MyInner/Assets/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MyInner/js/jquery.js" afterPath="$PROJECT_DIR$/MyInner/Assets/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/View/Delete_User_MyInner.php" afterPath="$PROJECT_DIR$/MyInner/View/Delete_User_MyInner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php" afterPath="$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php" afterPath="$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyInner/View/Update_User_MyInner.php" afterPath="$PROJECT_DIR$/MyInner/View/Update_User_MyInner.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,78 +85,38 @@
       <file leaf-file-name="Sing_Up_MyInner.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+            <state relative-caret-position="1564">
+              <caret line="92" column="25" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sign_In_MyInner.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sign_In_MyInner.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="96" column="14" lean-forward="false" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyInner/Controller/Login.php">
+      <file leaf-file-name="Update_User_MyInner.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyInner/View/Update_User_MyInner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyInner/Controller/Register.php">
+      <file leaf-file-name="Delete_User_MyInner.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyInner/View/Delete_User_MyInner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stylish-portfolio.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyInner/View/css/stylish-portfolio.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2482">
-              <caret line="146" column="1" lean-forward="false" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Template_MyInner.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dashboard_MyInner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyInner/View/Dashboard_MyInner.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="full-width-pics.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyInner/View/css/full-width-pics.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="131" />
               <folding />
             </state>
           </provider>
@@ -100,8 +130,8 @@
       <find>a</find>
     </findStrings>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -115,9 +145,13 @@
         <option value="$PROJECT_DIR$/MyInner/Controller/Sing_Up_MyInner.php" />
         <option value="$PROJECT_DIR$/MyInner/View/Dashboard_MyInner.php" />
         <option value="$PROJECT_DIR$/MyInner/Controller/Register.php" />
+        <option value="$PROJECT_DIR$/MyInner/Controller/Login.php" />
+        <option value="$PROJECT_DIR$/MyInner/View/footer.php" />
         <option value="$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php" />
         <option value="$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php" />
-        <option value="$PROJECT_DIR$/MyInner/Controller/Login.php" />
+        <option value="$PROJECT_DIR$/MyInner/View/header.php" />
+        <option value="$PROJECT_DIR$/MyInner/View/Delete_User_MyInner.php" />
+        <option value="$PROJECT_DIR$/MyInner/View/Update_User_MyInner.php" />
       </list>
     </option>
   </component>
@@ -133,6 +167,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -155,21 +192,21 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -179,11 +216,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -197,11 +234,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MI-master" />
+              <option name="myItemId" value="MI" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -209,7 +246,29 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MI" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyInner" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,10 +278,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyInner/View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyInner/Assets" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\MI\MyInner\Assets" />
       <recent name="C:\xampp\htdocs\MI-master\MyInner\View" />
     </key>
   </component>
@@ -343,11 +403,12 @@
       <workItem from="1492477019394" duration="218000" />
       <workItem from="1492477519580" duration="141000" />
       <workItem from="1492525508799" duration="203000" />
+      <workItem from="1492620012272" duration="1489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53697000" />
+    <option name="totallyTimeSpent" value="55186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -355,10 +416,10 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13323572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -366,9 +427,9 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -405,37 +466,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="148" column="14" lean-forward="false" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="104" lean-forward="true" selection-start-line="89" selection-start-column="104" selection-end-line="89" selection-end-column="233" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyInner/Controller/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -452,14 +482,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.min.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="21940" lean-forward="false" selection-start-line="4" selection-start-column="21833" selection-end-line="4" selection-end-column="21940" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/full-width-pics.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
@@ -482,7 +512,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -498,14 +528,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.min.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="21940" lean-forward="false" selection-start-line="4" selection-start-column="21833" selection-end-line="4" selection-end-column="21940" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/full-width-pics.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
@@ -543,21 +573,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/index.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/stylish-portfolio.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/stylish-portfolio.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -573,14 +603,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.min.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="21940" lean-forward="false" selection-start-line="4" selection-start-column="21833" selection-end-line="4" selection-end-column="21940" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/full-width-pics.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
@@ -604,7 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.min.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="2704" lean-forward="false" selection-start-line="4" selection-start-column="2704" selection-end-line="4" selection-end-column="2704" />
@@ -618,7 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/full-width-pics.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
@@ -634,14 +664,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.min.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="27936" lean-forward="false" selection-start-line="4" selection-start-column="27936" selection-end-line="4" selection-end-column="27936" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/full-width-pics.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
@@ -685,14 +715,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.min.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="21940" lean-forward="false" selection-start-line="4" selection-start-column="21833" selection-end-line="4" selection-end-column="21940" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/full-width-pics.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/full-width-pics.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
@@ -700,21 +730,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/Delete_User_MyInner.php">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/Template_MyInner.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/Template_MyInner.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -722,7 +745,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -743,7 +766,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/css/stylish-portfolio.css">
+    <entry file="file://$PROJECT_DIR$/MyInner/Assets/css/stylish-portfolio.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2482">
           <caret line="146" column="1" lean-forward="false" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
@@ -755,14 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -783,10 +798,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/View/Sing_Up_MyInner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" column="25" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyInner/View/Sign_In_MyInner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="96" column="14" lean-forward="false" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/View/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/View/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/View/Delete_User_MyInner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyInner/View/Update_User_MyInner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
