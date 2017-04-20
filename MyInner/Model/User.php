@@ -8,19 +8,21 @@
  */
 class User
 {
-    //atributos
+                                    //**********atributos*******
     private $ID_USER, $NOME_USER, $SOBRENOME_USER;
     private $ENDERECO_USER, $EMAIL_USER, $SEXO_USER;
     private $CIDADE_USER, $ESTADO_USER, $PAIS_USER;
     private $DATANASC_USER, $ROLE_USER;
     private $USER_NAME, $CHECKBOXCONTRATO;
 
-    //metodos especiais
+                                //*********metodos especiais*********
     public function buscarUsuario(){
 
     }
+    public function avaliar(){
 
-    //GETTERS
+    }
+                                    //*********GETTERS*********
     /**
      * @return mixed
      */
@@ -117,10 +119,7 @@ class User
         return $this->CHECKBOXCONTRATO;
     }
 
-
-
-    //SETTERS
-
+                                //*********SETTERS*********
 
     /**
      * @param mixed $ID_USER
@@ -130,8 +129,6 @@ class User
         $this->ID_USER = $ID_USER;
     }
 
-
-
     /**
      * @param mixed $NOME_USER
      */
@@ -139,8 +136,6 @@ class User
     {
         $this->NOME_USER = $NOME_USER;
     }
-
-
 
     /**
      * @param mixed $SOBRENOME_USER
@@ -150,8 +145,6 @@ class User
         $this->SOBRENOME_USER = $SOBRENOME_USER;
     }
 
-
-
     /**
      * @param mixed $ENDERECO_USER
      */
@@ -159,8 +152,6 @@ class User
     {
         $this->ENDERECO_USER = $ENDERECO_USER;
     }
-
-
 
     /**
      * @param mixed $EMAIL_USER
@@ -170,8 +161,6 @@ class User
         $this->EMAIL_USER = $EMAIL_USER;
     }
 
-
-
     /**
      * @param mixed $SEXO_USER
      */
@@ -179,7 +168,6 @@ class User
     {
         $this->SEXO_USER = $SEXO_USER;
     }
-
 
 
     /**
@@ -191,7 +179,6 @@ class User
     }
 
 
-
     /**
      * @param mixed $ESTADO_USER
      */
@@ -199,7 +186,6 @@ class User
     {
         $this->ESTADO_USER = $ESTADO_USER;
     }
-
 
 
     /**
@@ -218,7 +204,6 @@ class User
     {
         $this->DATANASC_USER = $DATANASC_USER;
     }
-
 
 
     /**
@@ -246,7 +231,6 @@ class User
     }
 
 
-
     /**
      * @param mixed $CHECKBOXCONTRATO
      */
@@ -254,10 +238,5 @@ class User
     {
         $this->CHECKBOXCONTRATO = $CHECKBOXCONTRATO;
     }
-
-    //
-
-
-
 
 }
