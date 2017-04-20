@@ -2,7 +2,9 @@
 <?php
 // Iniciar sessão
 session_start();
-$_SESSION["invalid"]=false;
+$_SESSION["login"]=false;
+
+
 ?>
 <?php include("header.php"); ?>
 <!-- Content Section -->
