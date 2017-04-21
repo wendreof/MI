@@ -1,15 +1,15 @@
+<html><pre></html>
 <?php
 include 'ConnectionFactory.php';
 session_start(); //inicia a sessão
 
 // Exibe dados do perfil (Foto, dados e todas as avaliações anteriores)
-$user = $_GET['user'];
-$email = $_GET['email'];
-$sql = "SP_SELECT_USER (\"$user\", \"$email\");";
+
+$sql = "SP_SELECT_USER ('wendreo@outlook.com');";
 
 $result = mysqli_query($conexao, $sql);
-if(mysqli_num_rows($result) > 0){
-    while($row = mysqli_fetch_array($result)){
+
+    $row = mysqli_fetch_array($result);
         $_SESSION['ID_USER'] = $row['ID_USER'];
         $_SESSION['NOME_USER'] = $row['NOME_USER'];
         $_SESSION['SOBRENOME_USER'] = $row['SOBRENOME_USER'];
@@ -24,15 +24,16 @@ if(mysqli_num_rows($result) > 0){
         $_SESSION['EMAIL_USER'] = $row['EMAIL_USER'];
         $_SESSION['ROLE_USER'] = $row['ROLE_USER'];
 
-    }
-}else {
+
+
     echo "estou aqui";
 
-}
-    var_dump($_SESSION);
+
+    print_r($_SESSION);
     mysqli_error($conexao);
 
 
 
 
 ?>
+<html></pre></html>
