@@ -4203,6 +4203,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
+
+
   }
   .navbar-collapse.in {
     overflow-y: visible;
@@ -4363,6 +4365,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
 }
 .navbar-form {
   padding: 10px 15px;
@@ -6511,6 +6514,7 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
+
 .center-block {
   display: block;
   margin-right: auto;
@@ -6754,4 +6758,5 @@ button.close {
     display: none !important;
   }
 }
+
 /*# sourceMappingURL=index.css.map */

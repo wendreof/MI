@@ -23,7 +23,7 @@ USE `db_myinner` ;
 -- -----------------------------------------------------
 -- Table `db_myinner`.`tbl_login`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_login` (
+CREATE TABLE IF NOT EXISTS `db_myinner`.`TBL_LOGIN` (
   `ID_USER` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `USER_NAME` VARCHAR(255) NOT NULL,
   `PASSWORD_USER` VARCHAR(50) NOT NULL,
@@ -34,17 +34,17 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
-CREATE UNIQUE INDEX `USER_NAME` ON `db_myinner`.`tbl_login` (`USER_NAME` ASC);
+CREATE UNIQUE INDEX `USER_NAME` ON `db_myinner`.`TBL_LOGIN` (`USER_NAME` ASC);
 
 SHOW WARNINGS;
-CREATE UNIQUE INDEX `EMAIL_USER` ON `db_myinner`.`tbl_login` (`EMAIL_USER` ASC);
+CREATE UNIQUE INDEX `EMAIL_USER` ON `db_myinner`.`TBL_LOGIN` (`EMAIL_USER` ASC);
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `db_myinner`.`tbl_user`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_user` (
+CREATE TABLE IF NOT EXISTS `db_myinner`.`TBL_USER` (
   `ID_USER` BIGINT(20) NOT NULL,
   `NOME_USER` VARCHAR(15) NOT NULL,
   `SOBRENOME_USER` VARCHAR(15) NOT NULL,
@@ -60,31 +60,31 @@ CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_user` (
   `CHECKBOXCONTRATO` TINYINT(1) NULL DEFAULT '1',
   CONSTRAINT `tbl_user_ibfk_1`
     FOREIGN KEY (`ID_USER`)
-    REFERENCES `db_myinner`.`tbl_login` (`ID_USER`),
+    REFERENCES `db_myinner`.`TBL_LOGIN` (`ID_USER`),
   CONSTRAINT `tbl_user_ibfk_2`
     FOREIGN KEY (`EMAIL_USER`)
-    REFERENCES `db_myinner`.`tbl_login` (`EMAIL_USER`),
+    REFERENCES `db_myinner`.`TBL_LOGIN` (`EMAIL_USER`),
   CONSTRAINT `tbl_user_ibfk_3`
     FOREIGN KEY (`USER_NAME`)
-    REFERENCES `db_myinner`.`tbl_login` (`USER_NAME`))
+    REFERENCES `db_myinner`.`TBL_LOGIN` (`USER_NAME`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
-CREATE INDEX `ID_USER` ON `db_myinner`.`tbl_user` (`ID_USER` ASC);
+CREATE INDEX `ID_USER` ON `db_myinner`.`TBL_USER` (`ID_USER` ASC);
 
 SHOW WARNINGS;
-CREATE INDEX `EMAIL_USER` ON `db_myinner`.`tbl_user` (`EMAIL_USER` ASC);
+CREATE INDEX `EMAIL_USER` ON `db_myinner`.`TBL_USER` (`EMAIL_USER` ASC);
 
 SHOW WARNINGS;
-CREATE INDEX `USER_NAME` ON `db_myinner`.`tbl_user` (`USER_NAME` ASC);
+CREATE INDEX `USER_NAME` ON `db_myinner`.`TBL_USER` (`USER_NAME` ASC);
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `db_myinner`.`tbl_assessments`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_assessments` (
+CREATE TABLE IF NOT EXISTS `db_myinner`.`TBL_ASSESSMENTS` (
   `ID_EVALUATION` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `ID_USER_EVALUATOR` BIGINT(20) NOT NULL,
   `ID_USER_EVALUATED` BIGINT(20) NOT NULL,
@@ -98,25 +98,25 @@ CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_assessments` (
   PRIMARY KEY (`ID_EVALUATION`),
   CONSTRAINT `tbl_assessments_ibfk_1`
     FOREIGN KEY (`ID_USER_EVALUATOR`)
-    REFERENCES `db_myinner`.`tbl_user` (`ID_USER`),
+    REFERENCES `db_myinner`.`TBL_USER` (`ID_USER`),
   CONSTRAINT `tbl_assessments_ibfk_2`
     FOREIGN KEY (`ID_USER_EVALUATED`)
-    REFERENCES `db_myinner`.`tbl_user` (`ID_USER`))
+    REFERENCES `db_myinner`.`TBL_USER` (`ID_USER`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
-CREATE INDEX `ID_USER_EVALUATOR` ON `db_myinner`.`tbl_assessments` (`ID_USER_EVALUATOR` ASC);
+CREATE INDEX `ID_USER_EVALUATOR` ON `db_myinner`.`TBL_ASSESSMENTS` (`ID_USER_EVALUATOR` ASC);
 
 SHOW WARNINGS;
-CREATE INDEX `ID_USER_EVALUATED` ON `db_myinner`.`tbl_assessments` (`ID_USER_EVALUATED` ASC);
+CREATE INDEX `ID_USER_EVALUATED` ON `db_myinner`.`TBL_ASSESSMENTS` (`ID_USER_EVALUATED` ASC);
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `db_myinner`.`tbl_ticket`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_ticket` (
+CREATE TABLE IF NOT EXISTS `db_myinner`.`TBL_TICKET` (
   `ID_TICKET` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `ID_USER` BIGINT(20) NOT NULL,
   `TEXT_TICKET` TEXT NOT NULL,
@@ -124,19 +124,19 @@ CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_ticket` (
   PRIMARY KEY (`ID_TICKET`),
   CONSTRAINT `tbl_ticket_ibfk_1`
     FOREIGN KEY (`ID_USER`)
-    REFERENCES `db_myinner`.`tbl_user` (`ID_USER`))
+    REFERENCES `db_myinner`.`TBL_USER` (`ID_USER`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
-CREATE INDEX `ID_USER` ON `db_myinner`.`tbl_ticket` (`ID_USER` ASC);
+CREATE INDEX `ID_USER` ON `db_myinner`.`TBL_TICKET` (`ID_USER` ASC);
 
 SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `db_myinner`.`tbl_ejected_users`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_ejected_users` (
+CREATE TABLE IF NOT EXISTS `db_myinner`.`TBL_EJECTED_USERS` (
   `ID_USER_ADM` BIGINT(20) NOT NULL,
   `ROLE_USER` CHAR(1) NOT NULL,
   `ID_USER` BIGINT(20) NOT NULL,
@@ -144,24 +144,24 @@ CREATE TABLE IF NOT EXISTS `db_myinner`.`tbl_ejected_users` (
   `ID_TICKET` BIGINT(20) NULL DEFAULT NULL,
   CONSTRAINT `tbl_ejected_users_ibfk_1`
     FOREIGN KEY (`ID_USER_ADM`)
-    REFERENCES `db_myinner`.`tbl_user` (`ID_USER`),
+    REFERENCES `db_myinner`.`TBL_USER` (`ID_USER`),
   CONSTRAINT `tbl_ejected_users_ibfk_2`
     FOREIGN KEY (`ID_USER`)
-    REFERENCES `db_myinner`.`tbl_user` (`ID_USER`),
+    REFERENCES `db_myinner`.`TBL_USER` (`ID_USER`),
   CONSTRAINT `tbl_ejected_users_ibfk_3`
     FOREIGN KEY (`ID_TICKET`)
-    REFERENCES `db_myinner`.`tbl_ticket` (`ID_TICKET`))
+    REFERENCES `db_myinner`.`TBL_TICKET` (`ID_TICKET`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 SHOW WARNINGS;
-CREATE INDEX `ID_USER_ADM` ON `db_myinner`.`tbl_ejected_users` (`ID_USER_ADM` ASC);
+CREATE INDEX `ID_USER_ADM` ON `db_myinner`.`TBL_EJECTED_USERS` (`ID_USER_ADM` ASC);
 
 SHOW WARNINGS;
-CREATE INDEX `ID_USER` ON `db_myinner`.`tbl_ejected_users` (`ID_USER` ASC);
+CREATE INDEX `ID_USER` ON `db_myinner`.`TBL_EJECTED_USERS` (`ID_USER` ASC);
 
 SHOW WARNINGS;
-CREATE INDEX `ID_TICKET` ON `db_myinner`.`tbl_ejected_users` (`ID_TICKET` ASC);
+CREATE INDEX `ID_TICKET` ON `db_myinner`.`TBL_EJECTED_USERS` (`ID_TICKET` ASC);
 
 SHOW WARNINGS;
 USE `db_myinner` ;
@@ -269,11 +269,11 @@ USE `db_myinner`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_SELECT_USER`(_USER_NAME VARCHAR (255),_EMAIL_USER VARCHAR(255))
 BEGIN
 SELECT US.ID_USER,US.NOME_USER,US.SOBRENOME_USER,US.ENDERECO_USER,US.EMAIL_USER,US.SEXO_USER,US.CIDADE_USER,US.ESTADO_USER,
-US.PAIS_USER,US.DATANASC_USER,US.USER_NAME, US.EMAIL_USER
+US.PAIS_USER,US.DATANASC_USER,US.USER_NAME, US.EMAIL_USER,US.ROLE_USER
 FROM TBL_USER AS US
 INNER JOIN TBL_LOGIN AS LO 
 ON US.USER_NAME = LO.USER_NAME && US.EMAIL_USER = LO.EMAIL_USER
-WHERE US.USER_NAME = _USER_NAME AND US.EMAIL_USER = _EMAIL_USER;
+WHERE US.USER_NAME = _USER_NAME OR US.EMAIL_USER = _EMAIL_USER;
 END$$
 
 DELIMITER ;
