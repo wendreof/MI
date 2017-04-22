@@ -28,13 +28,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: #2e6da4;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #2e6da4;
 }
 h1,
 h2,
@@ -57,8 +57,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #2b542c ;
+  border-color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -69,8 +69,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #2b542c ;
+  border-color: white;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -92,17 +92,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #2b542c ;
+  border-color: white;
 }
 .btn-primary .badge {
-  color: #fed136;
+  color: #2b542c;
   background-color: white;
 }
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #2b542c ;
+  border-color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -116,8 +116,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #2b542c ;
+  border-color: white;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -139,11 +139,11 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #2b542c ;
+  border-color: white;
 }
 .btn-xl .badge {
-  color: #fed136;
+  color: #2b542c;
   background-color: white;
 }
 .navbar-custom {
@@ -642,10 +642,10 @@ ul.social-buttons li a {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-  background-color: #fed136;
+ul.social-buttons li a i:hover,
+ul.social-buttons li a i:focus,
+ul.social-buttons li a i:active {
+  background-color: #2e6da4;
 }
 .btn:focus,
 .btn:active,

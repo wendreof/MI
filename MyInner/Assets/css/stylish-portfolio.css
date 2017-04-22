@@ -335,10 +335,18 @@ a.Menu{
     display: block;
     color: #3fb81e;
     border-radius: 15px;
+    max-width: 350px;
+
+
+    -webkit-background-color: rgba(0,0,0,.1);
+    -moz-background-color: rgba(0,0,0,.1);
 }
 ul.menu-right {
     display: block;
+    position: relative;
     float: right;
-    margin-right: -200px;
+    margin-right: -250px;
+    max-width: 900px;
 }
+
 }

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-png" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Page from Login">
-    <meta name="author" content="My Inner">
+
 
     <!-- Bootstrap Core CSS -->
     <link href="../Assets/css/Template_MyInner.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../Assets/css/full-width-pics.css" rel="stylesheet">
+
+
 
     <title>My Inner</title>
 
@@ -37,7 +38,7 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">MyInner</a>
+            <a class="navbar-brand" href="index.php">MyInner</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

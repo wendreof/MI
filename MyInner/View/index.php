@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+
+    $ETICA_VALUE = "Ética é um conjunto de conhecimentos extraídos da investigação do comportamento humano ao tentar explicar as regras morais de forma racional, fundamentada, científica e teórica. É uma reflexão sobre a moral.";
+    $MORAL_VALUE = "Moral é o conjunto de regras aplicadas no cotidiano e usadas continuamente por cada cidadão. Essas regras orientam cada indivíduo, norteando as suas ações e os seus julgamentos sobre o que é moral ou imoral, certo ou errado, bom ou mau.";
+    $HONESTIDADE_VALUE ="Honestidade é a palavra que indica a qualidade de ser verdadeiro: não mentir, não fraudar, não enganar.Quanto à etimologia, a palavra honestidade tem origem no latim honos, que remete para dignidade e honra.";
+    $INTELIGENCIA_VALUE="Inteligência é um conjunto que forma todas as características intelectuais de um indivíduo, ou seja, a faculdade de conhecer, compreender, raciocinar, pensar e interpretar. A inteligência é uma das principais distinções entre o ser humano e os outros animais. ";
+    $RESPONSABILIDADE_VALUE="Responsável é o adjetivo que qualifica algo ou alguém que é capaz de responder pelos seus próprios atos ou pelas ações de outras pessoas, ou seja, que assume a responsabilidade";
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,20 +21,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="Douglas" content="">
-
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
     <title>MyInner</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../Assets/css/index.min.css" rel="stylesheet">
     <link href="../Assets/css/agency.min.css" rel="stylesheet">
-    <link href="../Assets/css/agency_index.min.css" rel="stylesheet">
     <link href="../Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="../Assets/css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +57,7 @@
                 <ul class="nav navbar-nav navbar-right menu-right">
 
                     <li>
-                        <a class="Menu" href="#">Por Que Avaliar ?</a>
+                        <a class="Menu" href="#services">Por Que Cadastrar-se ?</a>
                     </li>
                     <li>
                         <a class="Menu" href="#">O Que posso  Avaliar ?</a>
@@ -91,8 +104,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Nossos Objetivos</h2>
+                    <h3 class="section-subheading text-muted">Você ainda não sabe por que cadastra-se no nosso sistema ?.</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -101,24 +114,27 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Visão</h4>
+                    <p class="text-muted">Nossa visão baseia-se em fortalecer a confiança do mercado inter-pessoal.Gerando travez de nosso sistema um ponto
+                    de referência a todos aquele que necessitarem de um apoio em sua palavra de honestidade,tendo em vista o E-Commerce como um dos principais
+                        focos pela falta de referencia existente hoje na Internet.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Missão</h4>
+                    <p class="text-muted">O foco é oferecer credibilidade correto ? Então nada mais do que claro é o nosso comprometimento com a segurança
+                        e o processamento dos dados aqui fornecidos para credibilizar e autenticar a eficacia do sistema.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Valores</h4>
+                    <p class="text-muted">Os nossos valores baseiam-se em nossos navegantes. Junstos iremos tornar um mundo melhor baseado em valores morais e éticos.</p>
                 </div>
             </div>
         </div>
@@ -130,16 +146,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">De Quem Foi a Idéia ?</h2>
+                    <h3 class="section-subheading text-muted">Aqui estão os responsaveis..</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="../Assets/img/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <img src="../Assets/img/Douglas.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Douglas Domenciano</h4>
+                        <p class="text-muted">Founder and CEO</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href=""><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/douglas.junior.948" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/douglas-domenciano-84a04212b" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="../Assets/img/Wendreo.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Wendreo Fernandes</h4>
+                        <p class="text-muted">Full Developer and COO</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -150,11 +181,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="../Assets/img/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <h4>Pedro Bono</h4>
+                        <p class="text-muted">Analist Senior</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -165,11 +196,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="../Assets/img/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
+                        <h4>Marcus Cantarelli</h4>
+                        <p class="text-muted">Analist Senior</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -195,10 +226,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>Botões Para edição e linkagem</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
+                    <h3>Aspectos avaliados </h3>
+                    <div class="tooltip-demo">
+                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="left" data-content="<?php echo $ETICA_VALUE; ?>">
+                            ÉTICA
+                        </button>
+                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="<?php echo $MORAL_VALUE; ?>">
+                            MORAL
+                        </button>
+                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<?php echo $HONESTIDADE_VALUE; ?>">
+                            HONESTIDADE
+                        </button>
+                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="<?php echo $INTELIGENCIA_VALUE; ?>">
+                            INTELIGENCIA
+                        </button>
+                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="right" data-content="<?php echo $RESPONSABILIDADE_VALUE; ?>">
+                            RESPONSABILIDADE
+
+                        </button>
+                    </div>
+                </div><!-- /.modal-dialog -->
             </div>
         </div>
     </aside>
@@ -219,14 +266,13 @@
                         </li>
                     </ul>
                     <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-instagram"></i></a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
                     </ul>
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; MyInner 2017</p>
@@ -315,7 +361,16 @@
         // Enable map zooming with mouse scroll when the user clicks the map
         $('.map').on('click', onMapClickHandler);
     </script>
-
+    <script>
+        // tooltip demo
+        $('.tooltip-demo').tooltip({
+            selector: "[data-toggle=tooltip]",
+            container: "body"
+        })
+        // popover demo
+        $("[data-toggle=popover]")
+            .popover()
+    </script>
 </body>
 
 </html>
