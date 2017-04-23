@@ -26,6 +26,7 @@ while($row = mysqli_fetch_array($result)){
 
 
 }
+//header("Location: Dashboard_MyInner.php");
 
 ?>
 <html></pre></html>

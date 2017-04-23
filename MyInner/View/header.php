@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="shortcut icon" href="../../favicon.png" type="image/x-png" />
+    <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-png" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
