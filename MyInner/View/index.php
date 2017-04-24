@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
     $ETICA_VALUE = "Ética é um conjunto de conhecimentos extraídos da investigação do comportamento humano ao tentar explicar as regras morais de forma racional, fundamentada, científica e teórica. É uma reflexão sobre a moral.";
     $MORAL_VALUE = "Moral é o conjunto de regras aplicadas no cotidiano e usadas continuamente por cada cidadão. Essas regras orientam cada indivíduo, norteando as suas ações e os seus julgamentos sobre o que é moral ou imoral, certo ou errado, bom ou mau.";
     $HONESTIDADE_VALUE ="Honestidade é a palavra que indica a qualidade de ser verdadeiro: não mentir, não fraudar, não enganar.Quanto à etimologia, a palavra honestidade tem origem no latim honos, que remete para dignidade e honra.";
@@ -21,7 +20,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="Douglas" content="">
-    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon" />
     <title>MyInner</title>
 
     <!-- Bootstrap Core CSS -->
@@ -170,7 +169,7 @@ session_start();
                     <div class="team-member">
                         <img src="../Assets/img/Wendreo.jpg" class="img-responsive img-circle" alt="">
                         <h4>Wendreo Fernandes</h4>
-                        <p class="text-muted">Full Developer and COO</p>
+                        <p class="text-muted">Co-Founder and CTO</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
