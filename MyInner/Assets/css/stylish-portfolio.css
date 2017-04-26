@@ -151,6 +151,7 @@ hr.small {
 /* Header */
 
 .header {
+    margin-top: -20px;
     display: table;
     position: relative;
     width: 100%;

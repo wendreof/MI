@@ -11,7 +11,7 @@
 
                 <form action="../Controller/Register.php" method="post" class="form-signup-login" name="formlogin">
                     <h2>Login</h2>
-                    <br><input type="text" id="input_css" name="user_name" id="txt_name" maxlength="10" size="50" required placeholder="USER NAME"> <br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
+                    <br><input type="text" id="input_css" name="user_name" id="txt_name" maxlength="10" size="50" required placeholder="USER NAME" > <br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
                     <br><input type="text" id="input_css" name="email_user" id="txt_name" maxlength="255" size="50" required placeholder="EMAIL"><br>
                     <br> <input type="password" id="input_css" name="password_user" id="txt_name" maxlength="8" size="50" required placeholder="PASSWORD"><br>
                     <br>
@@ -73,7 +73,7 @@
 
                     </div>
                     <div class="form-group">
-                        <input type="submit" name="register_bt" id="register_bt" class="btn btn-success" value="Cadastrar" >
+                        <input type="submit" name="register_bt" id="register_bt" class="w3-button-shape col-lg-4" value="Cadastrar" >
 
                     </div>
 
