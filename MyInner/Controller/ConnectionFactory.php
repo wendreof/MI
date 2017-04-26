@@ -3,7 +3,7 @@
     // Conectar ao BD MySQL
     $conexao = mysqli_connect("localhost",
         "root",
-        "1993",
+        "root",
         "db_myinner");
 
     if (!$conexao) {
