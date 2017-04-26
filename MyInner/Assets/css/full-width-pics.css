@@ -71,27 +71,7 @@ input#input_css {
      height: 40px;
 
  }
-.form-signup-login{
-    width: 100%;
-    max-width: 500px;
-    border: 2px solid #5cb85c;
-    border-radius: 5px;
-    margin: 0 auto;
-    padding: 0px 80px;
-    box-sizing: border-box;
-    height: auto;
-    margin-bottom: auto;
-}
-.form-signup{
-    width: 100%;
-    max-width: 500px;
-    border: 2px solid #5cb85c;
-    border-radius: 5px;
-    margin: 0 auto;
-    padding: 0px 80px;
-    box-sizing: border-box;
-    height: auto;
-}
+
 div#box-login{
     width: 100%;
     max-width: 500px;

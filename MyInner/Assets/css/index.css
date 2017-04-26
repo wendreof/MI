@@ -43,6 +43,7 @@ template {
   display: none;
 }
 a {
+  color: white;
   background-color: transparent;
 }
 a:active,
@@ -4325,6 +4326,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav {
   margin: 7.5px -15px;
 }
+
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -4496,7 +4498,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: transparent;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {

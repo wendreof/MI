@@ -11,7 +11,7 @@ body {
   color: #777777;
 }
 .text-primary {
-  color: #fed136;
+  color: #fff;
 }
 p {
   font-size: 14px;
@@ -26,9 +26,15 @@ a:focus,
 a:active,
 a.active {
   outline: none;
+  background: red;
 }
 a {
-  color: #2e6da4;
+  margin-left: 4px;
+  color: #fff;
+  border-radius: 4px;
+  display: block;
+  border: 1px solid rgba(0,0,0,.1);
+  background: transparent;
 }
 a:hover,
 a:focus,

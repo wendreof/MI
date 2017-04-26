@@ -5,7 +5,8 @@ vendor/
 # Para código C
 *.so
 # Para todos os arquivos e sub-pastas localizados na pasta bower_components/
-bower_components/
+bower_components
+
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm

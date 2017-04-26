@@ -19,14 +19,14 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="Douglas" content="">
+    <meta name="Douglas" content="Autor">
     <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon" />
     <title>MyInner</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../Assets/css/index.min.css" rel="stylesheet">
     <link href="../Assets/css/agency.min.css" rel="stylesheet">
-    <link href="../Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link href="../Assets/css/stylish-portfolio.css" rel="stylesheet">
 
@@ -46,35 +46,46 @@ session_start();
 
 <body>
 
+
     <!-- Navigation -->
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right menu-right">
-
-                    <li>
-                        <a class="Menu" href="#services">Por Que Cadastrar-se ?</a>
-                    </li>
-                    <li>
-                        <a class="Menu" href="#aspectos">O Que posso  Avaliar ?</a>
-                    </li>
-                    <li>
-                        <a class="Menu"  href="#team">Quem Somos</a>
-                    </li>
-                    <li>
-                        <a class="Menu" href="#">Sing In</a>
-                    </li>
-                    <li>
-                        <a class="Menu" href="#">Sign Up</a>
-                    </li>
-
-                </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                    <li><a href="../navbar-static-top/">Static top</a></li>
+                    <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
         <!-- /.container-fluid -->
     </nav>
 
