@@ -1,13 +1,14 @@
-<?php include("header.php"); ?>
+<?php include("header.php");?>
 <!-- Content Section -->
 
 <div class="w3-col m7">
     <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
         <h1>Atualização de dados... </h1><br><br>
-        <form action="../Controller/Register.php" method="post" class="form-signup-login w3-card-4 w3-container" name="formlogin">
+        <form action="../Controller/Update_User.php" method="post" class="form-signup-login w3-card-4 w3-container" name="formlogin">
 
             <br>
             <div class="form-group">
+                <input type="hidden" name="id_user" value="<?php echo $_SESSION['ID_USER']; ?>" >
                 <input type="text" id="input_css" name="name_user" id="txt_name" maxlength="15"  required placeholder="NOME "><br>
                 <br><input type="text" id="input_css" name="sobrenome_user" id="sobrenome" maxlength="15"  required placeholder="SOBRENOME"><br>
                 <br><label class="w3-text-theme">SEXO </label><br>
