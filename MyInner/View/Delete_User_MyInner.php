@@ -1,4 +1,12 @@
 <?php include("header.php"); ?>
+<<<<<<< HEAD
+
+
+<section>
+
+
+</section>
+=======
     <div class="w3-col m7">
 
 
@@ -13,4 +21,5 @@
         <!-- End Middle Column -->
     </div>
 
+>>>>>>> 776ec5e9f3809a2d677c769fd3cbd131dd21cfb0
 <?php include("footer.php"); ?>
