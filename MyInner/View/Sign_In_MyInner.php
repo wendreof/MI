@@ -1,13 +1,4 @@
 
-<?php
-// Iniciar sessão
-session_start();
-$_SESSION["login"]=false;
-
-
-?>
-<?php include("header.php"); ?>
-<!-- Content Section -->
 <section>
     <div class="container-entrar">
         <h1 align="center">Entar</h1>
@@ -31,6 +22,3 @@ $_SESSION["login"]=false;
     </div>
 </section>
 
-
-
-<?php include("footer.php");  ?>

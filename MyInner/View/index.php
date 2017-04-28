@@ -62,27 +62,95 @@ session_start();
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <a href="#about" style="text-decoration: none"><button class="btn btn-success btn-lg">My Inner ?</button>&nbsp;&nbsp;</a>
+                    <a href="#services" style="text-decoration: none"><button class="btn btn-success" href="#services">Objetivos</button>&nbsp;&nbsp;</a>
+                    <a href="#team" style="text-decoration: none"><button class="btn btn-success" href="#team">Quem Somos</button>&nbsp;&nbsp;</a>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Cadastrar-me</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">Formulário de registro</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        <form action="../Controller/Register.php" method="post"  name="formlogin">
+                                           <div class="form-signup-login">
+                                            <h3>Dados de Login</h3>
+                                            <br><input type="text" id="input_css" name="user_name" style="width: 50%;" maxlength="10"  required placeholder="USER NAME" >
+                                            <input type="password" style="width: 47%" id="input_css" name="password_user" maxlength="8"  required placeholder="PASSWORD"><br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
+                                            <input type="text" id="input_css" name="email_user" style="width: 98%;" maxlength="255"  required placeholder="EMAIL"><br>
+                                            <hr>
+                                            <h3>Dados de Usuario</h3>
+                                            <div class="form-group">
+                                                <input type="text" id="input_css" name="name_user" id="txt_name" style="width: 50%;" maxlength="15" required placeholder="NOME ">
+                                                <input type="text" id="input_css" name="sobrenome_user" id="sobrenome" style="width: 47%;" maxlength="15"  required placeholder="SOBRENOME">
+                                                <fieldset><legend>SEXO :
+                                                        <input type="radio" id="input_css" name="sexo_user"  value="M" checked="true"/><label for="input_css">Masculino</label>
+                                                        <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
+                                                </legend></fieldset>
+                                                <input type="date" id="input_css" name="datanasc_user" id="txt_datanasc" style="width: 47%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                                                <input type="text" id="input_css" name="cidade_user" id="txt_cidade" style="width: 50%;" required  placeholder="CIDADE">
+                                                <input type="text" id="input_css" name="endereco_user" id="txt_name" style="width: 98%;" maxlength="255"  required placeholder="  ENDERECO">
+                                                <select name="estado_user" id="estado" style="width: 47%;">
+                                                    <option value="Acre">Acre</option>
+                                                    <option value="Alagoas" >Alagoas</option>
+                                                    <option value="Amapá" >Amapá</option>
+                                                    <option value="Amazonas" >Amazonas</option>
+                                                    <option value="Bahia" >Bahia</option>
+                                                    <option value="Ceará" >Ceará</option>
+                                                    <option value="Distrito Federal" >DF</option>
+                                                    <option value="Espírito Santo" >ES</option>
+                                                    <option value="Goiás" >GO</option>
+                                                    <option value="Maranhão" >MA</option>
+                                                    <option value="Mato Grosso" >MT</option>
+                                                    <option value="Mato Grosso do Sul" >MS</option>
+                                                    <option value="Minas Gerais" >MG</option>
+                                                    <option value="Pará" >PA</option>
+                                                    <option value="Paraíba" >PB</option>
+                                                    <option value="Paraná" >PR</option>
+                                                    <option value="Pernambuco" >PE</option>
+                                                    <option value="Piauí" >PI</option>
+                                                    <option value="Rio de Janeiro" >RJ</option>
+                                                    <option value="Rio Grande do Norte" >RN</option>
+                                                    <option value="Rio Grande do Sul" >  RS   </option>
+                                                    <option value="Rondônia" >RO</option>
+                                                    <option value="Roraima" >RR</option>
+                                                    <option value="Santa Catarina" >SC</option>
+                                                    <option value="São Paulo" >SP</option>
+                                                    <option value="Sergipe" >SE</option>
+                                                    <option value="Tocantins" >TO</option>
+                                                    </optgroup>
+                                                </select>
+                                                <input type="text" id="input_css" name="pais_user" id="txt_name"  style="width: 50%;" placeholder="PAIS" required><br>
+                                                <p><input type="checkbox" name="terms_acept" id="txt_name" value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
+                                            </div>
+                                           </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                                <button type="submit" class="btn btn-success">Criar minha conta</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- /.modal -->
+
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="./">Default <span class="sr-only">(current)</span></a></li>
-                    <li><a href="../navbar-static-top/">Static top</a></li>
-                    <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-                </ul>
+                <form class="navbar-form navbar-right" action="../Controller/Login.php" method="post">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email ou Usuario" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Senha" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Entrar</button>
+                </form>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
@@ -101,7 +169,7 @@ session_start();
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Aqui ficara uma fase falando sobre o myinner, curiosidades etc</h2>
-                    <p class="lead">se voçe ainda não faz parte cadastre para começar a fazer parte desta nova era de redes sociais <a target="_self" href="Sing_Up_MyInner.php">Cadastrar</a>.</p>
+                    <p class="lead">se voçe ainda não faz parte cadastre para começar a fazer parte desta nova era de redes sociais <a data-toggle="modal" data-target="#myModal" href="#">Cadastrar</a>.</p>
                 </div>
             </div>
             <!-- /.row -->
