@@ -1,14 +1,18 @@
 <?php
 session_start();
 
+    $_SESSION['valid'] = false;
     $ETICA_VALUE = "Ética é um conjunto de conhecimentos extraídos da investigação do comportamento humano ao tentar explicar as regras morais de forma racional, fundamentada, científica e teórica. É uma reflexão sobre a moral.";
     $MORAL_VALUE = "Moral é o conjunto de regras aplicadas no cotidiano e usadas continuamente por cada cidadão. Essas regras orientam cada indivíduo, norteando as suas ações e os seus julgamentos sobre o que é moral ou imoral, certo ou errado, bom ou mau.";
     $HONESTIDADE_VALUE ="Honestidade é a palavra que indica a qualidade de ser verdadeiro: não mentir, não fraudar, não enganar.Quanto à etimologia, a palavra honestidade tem origem no latim honos, que remete para dignidade e honra.";
     $INTELIGENCIA_VALUE="Inteligência é um conjunto que forma todas as características intelectuais de um indivíduo, ou seja, a faculdade de conhecer, compreender, raciocinar, pensar e interpretar. A inteligência é uma das principais distinções entre o ser humano e os outros animais. ";
     $RESPONSABILIDADE_VALUE="Responsável é o adjetivo que qualifica algo ou alguém que é capaz de responder pelos seus próprios atos ou pelas ações de outras pessoas, ou seja, que assume a responsabilidade";
 
-
-?>
+    if ((isset($_SESSION['Error_Login'])? $_SESSION['Error_Login']: false) == true){
+    echo "<script>alert('Email ou Senha Incorretos');</script>";
+    unset($_SESSION['Error_Login']);
+}
+    ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -35,12 +39,6 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <!-- <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> -->
-     <!-- <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->
- <!--[endif]-->
 
 </head>
 
@@ -62,7 +60,7 @@ session_start();
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <a href="#about" style="text-decoration: none"><button class="btn btn-success btn-lg">My Inner ?</button>&nbsp;&nbsp;</a>
+                    <a href="#about" style="text-decoration: none"><button class="btn btn-success">My Inner ?</button>&nbsp;&nbsp;</a>
                     <a href="#services" style="text-decoration: none"><button class="btn btn-success" href="#services">Objetivos</button>&nbsp;&nbsp;</a>
                     <a href="#team" style="text-decoration: none"><button class="btn btn-success" href="#team">Quem Somos</button>&nbsp;&nbsp;</a>
                     <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Cadastrar-me</button>
@@ -91,10 +89,12 @@ session_start();
                                                         <input type="radio" id="input_css" name="sexo_user"  value="M" checked="true"/><label for="input_css">Masculino</label>
                                                         <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
                                                 </legend></fieldset>
-                                                <input type="date" id="input_css" name="datanasc_user" id="txt_datanasc" style="width: 47%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
-                                                <input type="text" id="input_css" name="cidade_user" id="txt_cidade" style="width: 50%;" required  placeholder="CIDADE">
-                                                <input type="text" id="input_css" name="endereco_user" id="txt_name" style="width: 98%;" maxlength="255"  required placeholder="  ENDERECO">
-                                                <select name="estado_user" id="estado" style="width: 47%;">
+                                                <input type="date" id="input_css" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                                                <input type="text" id="input_css" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
+                                                <input type="text" id="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
+                                                <input type="text" id="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
+
+                                                <select name="estado_user" id="estado" style="min-width: 47%" >
                                                     <option value="Acre">Acre</option>
                                                     <option value="Alagoas" >Alagoas</option>
                                                     <option value="Amapá" >Amapá</option>
@@ -123,9 +123,9 @@ session_start();
                                                     <option value="Sergipe" >SE</option>
                                                     <option value="Tocantins" >TO</option>
                                                     </optgroup>
-                                                </select>
-                                                <input type="text" id="input_css" name="pais_user" id="txt_name"  style="width: 50%;" placeholder="PAIS" required><br>
-                                                <p><input type="checkbox" name="terms_acept" id="txt_name" value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
+
+                                                </select><input type="text" id="input_css" name="pais_user"   style="width: 50%;" placeholder="PAIS" ><br>
+                                                <p><input type="checkbox" name="terms_acept"  value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
                                             </div>
                                            </div>
                                             <div class="modal-footer">
@@ -144,10 +144,10 @@ session_start();
                 </ul>
                 <form class="navbar-form navbar-right" action="../Controller/Login.php" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="Email ou Usuario" class="form-control">
+                        <input type="text" name="email_username" placeholder="Email ou Usuario" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="password" placeholder="Senha" class="form-control">
+                        <input type="password" name="password_user" placeholder="Senha" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-success">Entrar</button>
                 </form>
@@ -190,7 +190,7 @@ session_start();
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Visão</h4>
                     <p class="text-muted">Nossa visão baseia-se em fortalecer a confiança do mercado inter-pessoal.Gerando travez de nosso sistema um ponto
@@ -200,19 +200,20 @@ session_start();
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-crosshairs fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Missão</h4>
                     <p class="text-muted">O foco é oferecer credibilidade correto ? Então nada mais do que claro é o nosso comprometimento com a segurança
-                        e o processamento dos dados aqui fornecidos para credibilizar e autenticar a eficacia do sistema.</p>
+                        e o processamento dos dados aqui fornecidos para credibilizar e autenticar a eficacia do sistema.Tornando-nos uma ree social confiavel
+                        em nossos conteudos.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Valores</h4>
-                    <p class="text-muted">Os nossos valores baseiam-se em nossos navegantes. Junstos iremos tornar um mundo melhor baseado em valores morais e éticos.</p>
+                    <p class="text-muted">Os nossos valores baseiam-se em nossos navegantes. Junstos iremos tornar um mundo melhor baseado em valores reais ausentes no mundo de hoje.</p>
                 </div>
             </div>
         </div>
@@ -438,6 +439,10 @@ session_start();
         }
         // Enable map zooming with mouse scroll when the user clicks the map
         $('.map').on('click', onMapClickHandler);
+
+
+
+
     </script>
     <script>
         // tooltip demo

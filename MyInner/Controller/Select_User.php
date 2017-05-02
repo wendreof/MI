@@ -1,15 +1,18 @@
 
 <?php  // Exibe dados do perfil (Foto, dados e todas as avaliações anteriores)
-    include 'ConnectionFactory.php';
-        session_start(); //inicia a sessão
-        $us = $_POST['user'];
+    session_start(); //inicia a sessão
+    if($_SESSION['user']!= null) {
+        include 'ConnectionFactory.php';
+
+        $us = $_SESSION['user'];
 
 
-    $sql = "CALL SP_SELECT_USER ('$us');"; // SQL PARA CONSULTAR OS DADOS DO USUÁRIO
 
-            $result = mysqli_query($conexao, $sql);
+        $sql = "CALL SP_SELECT_USER ('$us');"; // SQL PARA CONSULTAR OS DADOS DO USUÁRIO
 
-    while($row = mysqli_fetch_array($result)){
+        $result = mysqli_query($conexao, $sql);
+
+        while ($row = mysqli_fetch_array($result)) {
             $_SESSION['ID_USER'] = $row['ID_USER'];
             $_SESSION['NOME_USER'] = $row['NOME_USER'];
             $_SESSION['SOBRENOME_USER'] = $row['SOBRENOME_USER'];
@@ -23,9 +26,12 @@
             $_SESSION['USER_NAME'] = $row['USER_NAME'];
             $_SESSION['EMAIL_USER'] = $row['EMAIL_USER'];
             $_SESSION['ROLE_USER'] = $row['ROLE_USER'];
+        }
+
+
+        header("Location: ../View/Dashboard_MyInner.php");
+        unset($_SESSION['user']);
+    }else{
+        echo "vaiavel vaiza";
     }
-
-
-    header("Location: ../View/Update_User_MyInner.php" );
-
 

@@ -2,6 +2,8 @@
 
 $_SESSION['name_user']= 'Douglas';
 $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'Honestidade'];
+$date=date_create(isset($_SESSION['datanasc_user'])? $_SESSION['datanasc_user'] : '1995-01-23');
+if ($_SESSION['valid']){
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,10 +24,10 @@ $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'H
 <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>My Inner</a>
+        <a href="Dashboard_MyInner.php" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" title="Dashboard"><i class="fa fa-home w3-margin-right"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Ir ao topo"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
+        <a href="Update_User_MyInner.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Configurações de Conta"><i class="fa fa-user"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Avaliar"><i class="fa fa-star-o"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Configurações de Conta"><i class="fa fa-user"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">1</span></button>
             <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
@@ -35,7 +37,7 @@ $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'H
                 <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
             </div>
         </div>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
+        <a href="../Controller/Logout.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Sair"><i class="fa fa-sign-out"></i></a>
     </div>
 </div>
 
@@ -56,12 +58,12 @@ $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'H
             <!-- Profile -->
             <div class="w3-card-2 w3-round w3-white">
                 <div class="w3-container">
-                    <h4 class="w3-center"><?php echo isset($_SESSION['name_user'])? $_SESSION['name_user'] : 'My Profile'; ?></h4>
+
                     <p class="w3-center"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                     <hr>
-                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['name_user'])? $_SESSION['name_user'] : 'Nome'; ?>,<?php echo isset($_SESSION['sobrenome_user'])? $_SESSION['sobrenome_user_user'] : 'Sobrenome'; ?></p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['cidade_user'])? $_SESSION['cidade_user'] : 'Aguaí'; ?>, <?php echo isset($_SESSION['pais_user'])? $_SESSION['pais_user'] : 'Brasil'; ?></p>
+                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> <?php echo date_format($date, 'd F Y'); ?></p>
                 </div>
             </div>
             <br>
@@ -69,7 +71,7 @@ $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'H
             <!-- Accordion -->
             <div class="w3-card-2 w3-round">
                 <div class="w3-white">
-                    <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heart fa-fw w3-margin-right"></i> Minhas Avaliações</button>
+                    <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heartbeat fa-fw w3-margin-right"></i> Minhas Avaliações</button>
                     <div id="Demo1" class="w3-hide w3-container">
                         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Como estou...</b></p>
 
@@ -154,3 +156,6 @@ $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'H
         <!-- Middle Column -->
 
 
+<?php  }else{
+    header("Location: ../View/index.php");
+}?>
