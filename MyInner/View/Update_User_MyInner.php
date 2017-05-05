@@ -9,12 +9,15 @@
             <br>
             <div class="form-group">
                 <input type="hidden" name="id_user" style="min-width: 50%" value="<?php echo $_SESSION['ID_USER']; ?>" >
-                <input type="text" id="input_css" style="min-width: 33%" name="name_user" id="txt_name" maxlength="15"  required placeholder="NOME ">
-                <input type="text" id="input_css" style="min-width: 30%" name="sobrenome_user" id="sobrenome" maxlength="15"  required placeholder="SOBRENOME">
-                <input type="date" id="input_css" style="min-width: 28%" name="datanasc_user" id="txt_datanasc" maxlength="8"  placeholder="DATA NASCIMENTO" required>
-
-                <input type="text" id="input_css" style="min-width: 97%" name="endereco_user" id="txt_name" maxlength="255"  required placeholder="  ENDERECO">
-                <input type="text" id="input_css" style="min-width: 40%" name="cidade_user" id="txt_cidade" required  placeholder="CIDADE">
+                <input type="text" class="input_css" style="min-width: 33%" value="<?php echo $_SESSION['NOME_USER']; ?>"name="name_user" id="txt_name" maxlength="15"  required placeholder="NOME ">
+                <input type="text" class="input_css" style="min-width: 30%" value="<?php echo $_SESSION['SOBRENOME_USER']; ?>"name="sobrenome_user" id="sobrenome" maxlength="15"  required placeholder="SOBRENOME">
+                <input type="date" class="input_css" style="min-width: 28%" value="<?php echo $_SESSION['DATANASC_USER']; ?>"name="datanasc_user" id="txt_datanasc" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                <legend>SEXO :
+                    <input type="radio" id="input_css" name="sexo_user"  value="M" checked="true"/><label for="input_css">Masculino</label>
+                    <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
+                </legend>
+                <input type="text" class="input_css" style="min-width: 97%" value="<?php echo $_SESSION['ENDERECO_USER']; ?>"name="endereco_user" id="txt_name" maxlength="255"  required placeholder="  ENDERECO">
+                <input type="text" class="input_css" style="min-width: 40%" value="<?php echo $_SESSION['CIDADE_USER']; ?>"name="cidade_user" id="txt_cidade" required  placeholder="CIDADE">
 
 
                 <select name="estado_user" id="estado" style="min-width: 10%" >
@@ -48,7 +51,7 @@
                     </optgroup>
 
                 </select>
-                <input type="text" id="input_css" style="min-width: 40%" name="pais_user" id="txt_name"   placeholder="PAIS" required>
+                <input type="text" class="input_css" style="min-width: 40%" value="<?php echo $_SESSION['PAIS_USER']; ?>"name="pais_user" id="txt_name"   placeholder="PAIS" required>
             </div>
                 <p><input type="submit" name="register_bt" id="register_bt" class="w3-theme-l2 w3-button-shape" value="Atualizar" ></p>
         </form><br><br>

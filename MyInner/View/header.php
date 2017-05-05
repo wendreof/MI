@@ -1,8 +1,7 @@
 <?php session_start();
 
-$_SESSION['name_user']= 'Douglas';
 $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'Honestidade'];
-$date=date_create(isset($_SESSION['datanasc_user'])? $_SESSION['datanasc_user'] : '1995-01-23');
+$date=date_create(isset($_SESSION['DATANASC_USER'])? $_SESSION['DATANASC_USER'] : 'DATA DE NASCIMENTO');
 if ($_SESSION['valid']){
 ?>
 <!DOCTYPE html>
@@ -61,8 +60,8 @@ if ($_SESSION['valid']){
 
                     <p class="w3-center"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                     <hr>
-                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['name_user'])? $_SESSION['name_user'] : 'Nome'; ?>,<?php echo isset($_SESSION['sobrenome_user'])? $_SESSION['sobrenome_user_user'] : 'Sobrenome'; ?></p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['cidade_user'])? $_SESSION['cidade_user'] : 'Aguaí'; ?>, <?php echo isset($_SESSION['pais_user'])? $_SESSION['pais_user'] : 'Brasil'; ?></p>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['NOME_USER'])? $_SESSION['NOME_USER'] : 'NOME'; ?>,<?php echo isset($_SESSION['SOBRENOME_USER'])? $_SESSION['SOBRENOME_USER'] : 'SOBRENOME'; ?></p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['CIDADE_USER'])? $_SESSION['CIDADE_USER'] : 'CIDADE'; ?>, <?php echo isset($_SESSION['PAIS_USER'])? $_SESSION['PAIS_USER'] : 'PAIS'; ?></p>
                     <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> <?php echo date_format($date, 'd F Y'); ?></p>
                 </div>
             </div>

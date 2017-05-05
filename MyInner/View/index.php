@@ -8,11 +8,7 @@ session_start();
     $INTELIGENCIA_VALUE="Inteligência é um conjunto que forma todas as características intelectuais de um indivíduo, ou seja, a faculdade de conhecer, compreender, raciocinar, pensar e interpretar. A inteligência é uma das principais distinções entre o ser humano e os outros animais. ";
     $RESPONSABILIDADE_VALUE="Responsável é o adjetivo que qualifica algo ou alguém que é capaz de responder pelos seus próprios atos ou pelas ações de outras pessoas, ou seja, que assume a responsabilidade";
 
-    if ((isset($_SESSION['Error_Login'])? $_SESSION['Error_Login']: false) == true){
-    echo "<script>alert('Email ou Senha Incorretos');</script>";
-    unset($_SESSION['Error_Login']);
-}
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -29,9 +25,9 @@ session_start();
 
     <!-- Bootstrap Core CSS -->
     <link href="../Assets/css/index.min.css" rel="stylesheet">
+    <link href="../Assets/css/Template_MyInner.css" rel="stylesheet">
     <link href="../Assets/css/agency.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom CSS -->
     <link href="../Assets/css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -39,6 +35,13 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
+    <script type="text/javascript" src="../Assets/js/jquery.mask.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[#cpf_user]').mask('999.999.999-99');
+        });
+
+    </script>
 
 </head>
 
@@ -77,22 +80,22 @@ session_start();
                                         <form action="../Controller/Register.php" method="post"  name="formlogin">
                                            <div class="form-signup-login">
                                             <h3>Dados de Login</h3>
-                                            <br><input type="text" id="input_css" name="user_name" style="width: 50%;" maxlength="10"  required placeholder="USER NAME" >
-                                            <input type="password" style="width: 47%" id="input_css" name="password_user" maxlength="8"  required placeholder="PASSWORD"><br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
-                                            <input type="text" id="input_css" name="email_user" style="width: 98%;" maxlength="255"  required placeholder="EMAIL"><br>
+                                            <br><input type="text" class="input_css" name="user_name" style="width: 50%;" maxlength="10"  required placeholder="USER NAME" >
+                                            <input type="password" style="width: 47%" class="input_css" name="password_user" maxlength="8"  required placeholder="PASSWORD"><br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
+                                            <input type="text" class="input_css" name="email_user" style="width: 98%;" maxlength="255"  required placeholder="EMAIL"><br>
                                             <hr>
                                             <h3>Dados de Usuario</h3>
                                             <div class="form-group">
-                                                <input type="text" id="input_css" name="name_user" id="txt_name" style="width: 50%;" maxlength="15" required placeholder="NOME ">
-                                                <input type="text" id="input_css" name="sobrenome_user" id="sobrenome" style="width: 47%;" maxlength="15"  required placeholder="SOBRENOME">
-                                                <fieldset><legend>SEXO :
-                                                        <input type="radio" id="input_css" name="sexo_user"  value="M" checked="true"/><label for="input_css">Masculino</label>
+                                                <input type="text" class="input_css" name="name_user" id="txt_name" style="width: 50%;" maxlength="15" required placeholder="NOME ">
+                                                <input type="text" class="input_css" name="sobrenome_user" id="sobrenome" style="width: 47%;" maxlength="15"  required placeholder="SOBRENOME">
+                                                <legend>SEXO :
+                                                        <input type="radio" id="input_css" name="sexo_user"  value="M" checked/><label for="input_css">Masculino</label>
                                                         <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
-                                                </legend></fieldset>
-                                                <input type="date" id="input_css" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
-                                                <input type="text" id="input_css" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
-                                                <input type="text" id="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
-                                                <input type="text" id="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
+                                                </legend>
+                                                <input type="date" class="input_css" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                                                <input type="text" id="cpf_user" class="input_css" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
+                                                <input type="text" class="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
+                                                <input type="text" class="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
 
                                                 <select name="estado_user" id="estado" style="min-width: 47%" >
                                                     <option value="Acre">Acre</option>
@@ -124,7 +127,7 @@ session_start();
                                                     <option value="Tocantins" >TO</option>
                                                     </optgroup>
 
-                                                </select><input type="text" id="input_css" name="pais_user"   style="width: 50%;" placeholder="PAIS" ><br>
+                                                </select><input type="text" class="input_css" name="pais_user"   style="width: 50%;" placeholder="PAIS" ><br>
                                                 <p><input type="checkbox" name="terms_acept"  value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
                                             </div>
                                            </div>
