@@ -143,6 +143,14 @@ session_start();
                             <!-- /.modal-dialog -->
                         </div>
                         <!-- /.modal -->
+                    <?php if (isset($_SESSION['RegError'])) { ?>
+                        <div style="margin:0;" class="alert alert-danger" role="alert"><b>Erro:</b> <?php echo $_SESSION['RegError'] ?> já existe. Por favor caso tenha esquecido seus dados de
+                            login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
+                    <?php } unset($_SESSION['RegError']);?>
+                    <?php if (isset($_SESSION['LogError'])) { ?>
+                        <div style="margin:0;" class="alert alert-danger" role="alert"><b>Erro:</b> Login incorreto,tente novamente. Por favor caso tenha esquecido seus dados de
+                            login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
+                    <?php } unset($_SESSION['LogError']);?>
 
                 </ul>
                 <form class="navbar-form navbar-right" action="../Controller/Login.php" method="post">
@@ -158,7 +166,6 @@ session_start();
         </div><!--/.container-fluid -->
     </nav>
         <!-- /.container-fluid -->
-    </nav>
 
 
     <!-- Header -->

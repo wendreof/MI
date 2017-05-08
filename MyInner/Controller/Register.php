@@ -1,18 +1,19 @@
 <?php
     session_start(); // Iniciar sessão
-       /* $user_nameU = mysqli_real_escape_string($conexao,$_POST['user_name']);
+        $user_nameU = mysqli_real_escape_string($conexao,$_POST['user_name']);
         $emailU = mysqli_real_escape_string($conexao,$_POST['email_user']);
+        $cpfU = mysqli_real_escape_string($conexao,$_POST['cpf_user']);
 
-        $sql_u = "CALL SP_CHECK_EXISTS_USERNAME (\"$user_nameU\");";
-        $sql_e = "CALL SP_CHECK_EXISTS_EMAIL (\"$user_nameU\");";
+        $sql_check = "SELECT FC_CHECK_EXISTS (\"$user_nameU\",\"$emailU\",\"$cpfU\");";
 
-        $user = mysqli_query($conexao, $sql_u);
-        $email = mysqli_query($conexao, $sql_e);
+
+        $check = mysqli_query($conexao, $sql_check);
+
 
         // Se encontrou o login/senha, loga...
-        if (mysqli_num_rows($user) > 0) {
+        if (mysqli_num_rows($check) != null) {
             // Redireciona para página
-            echo "<script>alert('EMAIL indisponivel')</script>";
+           $_SESSION['RegError'] = $check;
             header("Location: ../Views/index.php");
             setcookie("USER_NAME", $_POST["user_name"], time()+3600);
             setcookie("EMAIL_USER", $_POST["email_username"], time()+3600);
@@ -23,12 +24,8 @@
             setcookie("ENDERECO_USER", $_POST["endereco_user"], time()+3600);
             setcookie("CIDADE_USER", $_POST["cidade_user"], time()+3600);
             setcookie("PAIS_USER", $_POST["pais_user"], time()+3600);
-        }elseif (mysqli_num_rows($email) > 0){
-            // Redireciona para página
-            echo "<script>alert('EMAIL indisponivel')</script>";
-            header("Location: ../Views/index.php");
-        } else {
-*/
+        }else {
+
 
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 include("ConnectionFactory.php");
@@ -54,5 +51,5 @@
                 header("Location: ../View/index.php");
 
             }
-        //}
+        }
 ?>
