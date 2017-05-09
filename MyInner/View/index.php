@@ -35,12 +35,14 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
-    <script type="text/javascript" src="../Assets/js/jquery.mask.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('[#cpf_user]').mask('999.999.999-99');
-        });
-
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.maskedinput.js" type="text/javascript">
+    jQuery(function($){
+    $("#cpf_user").mask("999.999.999-99");
+    $("#phone").mask("(999) 999-9999");
+    $("#tin").mask("99-9999999");
+    $("#ssn").mask("999-99-9999");
+    });
     </script>
 
 </head>
@@ -143,15 +145,6 @@ session_start();
                             <!-- /.modal-dialog -->
                         </div>
                         <!-- /.modal -->
-                    <?php if (isset($_SESSION['RegError'])) { ?>
-                        <div style="margin:0;" class="alert alert-danger" role="alert"><b>Erro:</b> <?php echo $_SESSION['RegError'] ?> já existe. Por favor caso tenha esquecido seus dados de
-                            login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
-                    <?php } unset($_SESSION['RegError']);?>
-                    <?php if (isset($_SESSION['LogError'])) { ?>
-                        <div style="margin:0;" class="alert alert-danger" role="alert"><b>Erro:</b> Login incorreto,tente novamente. Por favor caso tenha esquecido seus dados de
-                            login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
-                    <?php } unset($_SESSION['LogError']);?>
-
                 </ul>
                 <form class="navbar-form navbar-right" action="../Controller/Login.php" method="post">
                     <div class="form-group">
@@ -164,9 +157,23 @@ session_start();
                 </form>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
+        <?php if (isset($_SESSION['RegError'])) { ?>
+            <div style="margin:0;" class="alert alert-danger text-center" role="alert"><b>Erro:</b> <?php echo $_SESSION['RegError'];?> já existe. Por favor caso tenha esquecido seus dados de
+                login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
+        <?php } unset($_SESSION['RegError']);?>
+
+        <?php if (isset($_SESSION['Error_Login'])) { ?>
+            <div style="margin:0;" class="alert alert-danger text-center" role="alert"><b>Erro:</b> Login incorreto,tente novamente. Por favor caso tenha esquecido seus dados de
+                login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
+        <?php } unset($_SESSION['Error_Login']);?>
+
+        <?php if (isset($_SESSION['RegisterOk'])) { ?>
+            <div style="margin:0;" class="alert alert-danger text-center" role="alert"><b>Sucesso:</b> Cadastro realizado com suceso. Por favor efetue o login para proseguir.</div>
+        <?php } unset($_SESSION['RegisterOk']);?>
+
+
     </nav>
         <!-- /.container-fluid -->
-
 
     <!-- Header -->
      <header id="top" class="header">

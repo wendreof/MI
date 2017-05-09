@@ -1,8 +1,9 @@
 <?php
     session_start(); // Iniciar sessão
+    include("ConnectionFactory.php");
         $user_nameU = mysqli_real_escape_string($conexao,$_POST['user_name']);
         $emailU = mysqli_real_escape_string($conexao,$_POST['email_user']);
-        $cpfU = mysqli_real_escape_string($conexao,$_POST['cpf_user']);
+        $cpfU = mysqli_real_escape_string($conexao,sha1($_POST['cpf_user']));
 
         $sql_check = "SELECT FC_CHECK_EXISTS (\"$user_nameU\",\"$emailU\",\"$cpfU\");";
 
@@ -11,10 +12,12 @@
 
 
         // Se encontrou o login/senha, loga...
-        if (mysqli_num_rows($check) != null) {
+        if (mysqli_num_rows($check) >0) {
             // Redireciona para página
-           $_SESSION['RegError'] = $check;
-            header("Location: ../Views/index.php");
+            $check = mysqli_fetch_array($check);
+            $_SESSION['RegError'] = $check [0];
+
+            header("Location: ../View/index.php");
             setcookie("USER_NAME", $_POST["user_name"], time()+3600);
             setcookie("EMAIL_USER", $_POST["email_username"], time()+3600);
             setcookie("NOME_USER", $_POST["nome_user"], time()+3600);
@@ -28,7 +31,7 @@
 
 
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                include("ConnectionFactory.php");
+
                 $email_user = mysqli_real_escape_string($conexao, $_POST['email_user']);
                 $user_name = mysqli_real_escape_string($conexao, $_POST['user_name']);
                 $password = mysqli_real_escape_string($conexao, md5($_POST['password_user']));
@@ -49,7 +52,9 @@
                 mysqli_query($conexao, $sql_Login);
                 mysqli_query($conexao, $sql_Register);
                 header("Location: ../View/index.php");
+                $_SESSION['RegisterOk']=true;
 
             }
         }
+
 ?>

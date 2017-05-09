@@ -26,10 +26,10 @@
     } else {
         $_SESSION["valid"]= FALSE;
         $_SESSION['Error_Login']= true;
-        header("Location: ../View/Dashboard_MyInner.php");
+        header("Location: ../View/index.php");
     }
     }else{
-        header("Location: ../View/Dashboard_MyInner.php");
+        header("Location: ../View/index.php");
 
     }
 
