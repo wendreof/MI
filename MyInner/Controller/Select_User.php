@@ -30,7 +30,7 @@
 
 
         header("Location: ../View/Dashboard_MyInner.php");
-        unset($_SESSION['user']);
+
     }else{
         echo "vaiavel vaiza";
     }

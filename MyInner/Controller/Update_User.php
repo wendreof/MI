@@ -15,6 +15,7 @@ $sql = "CALL SP_UPDATE_USER( '{$_POST['id_user']}',
         '{$_POST['datanasc_user']}');";
 
 mysqli_query($conexao, $sql);
+header("Location: ../Controller/Select_User.php")
 
 
 ?>
