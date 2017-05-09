@@ -20,34 +20,10 @@
                 <input type="text" class="input_css" style="min-width: 40%" value="<?php echo $_SESSION['CIDADE_USER']; ?>"name="cidade_user" id="txt_cidade" required  placeholder="CIDADE">
 
 
-                <select name="estado_user" id="estado" style="min-width: 30%" >
-                    <option value="Acre">Acre</option>
-                    <option value="Alagoas" >Alagoas</option>
-                    <option value="Amapá" >Amapá</option>
-                    <option value="Amazonas" >Amazonas</option>
-                    <option value="Bahia" >Bahia</option>
-                    <option value="Ceará" >Ceará</option>
-                    <option value="Distrito Federal" >DF</option>
-                    <option value="Espírito Santo" >ES</option>
-                    <option value="Goiás" >GO</option>
-                    <option value="Maranhão" >MA</option>
-                    <option value="Mato Grosso" >MT</option>
-                    <option value="Mato Grosso do Sul" >MS</option>
-                    <option value="Minas Gerais" >MG</option>
-                    <option value="Pará" >PA</option>
-                    <option value="Paraíba" >PB</option>
-                    <option value="Paraná" >PR</option>
-                    <option value="Pernambuco" >PE</option>
-                    <option value="Piauí" >PI</option>
-                    <option value="Rio de Janeiro" >RJ</option>
-                    <option value="Rio Grande do Norte" >RN</option>
-                    <option value="Rio Grande do Sul" >  RS   </option>
-                    <option value="Rondônia" >RO</option>
-                    <option value="Roraima" >RR</option>
-                    <option value="Santa Catarina" >SC</option>
-                    <option value="São Paulo" >SP</option>
-                    <option value="Sergipe" >SE</option>
-                    <option value="Tocantins" >TO</option>
+                <select name="estado_user" id="estado" style="min-width: 47%" >
+                    <?php for ($i=0;$i<=count($estados);$i++){ require_once "../Model/States.php"; $estados = setStates();?>
+                        <option value="<?php echo $estados [$i]; ?>";<?php if ($estados [$i] == $_SESSION['ESTADO_USER']){?> selected="selected" <?php } ?>><?php echo $estados[$i];?></option>
+                    <?php } ?>
                     </optgroup>
 
                 </select>

@@ -7,7 +7,7 @@ session_start();
     $HONESTIDADE_VALUE ="Honestidade é a palavra que indica a qualidade de ser verdadeiro: não mentir, não fraudar, não enganar.Quanto à etimologia, a palavra honestidade tem origem no latim honos, que remete para dignidade e honra.";
     $INTELIGENCIA_VALUE="Inteligência é um conjunto que forma todas as características intelectuais de um indivíduo, ou seja, a faculdade de conhecer, compreender, raciocinar, pensar e interpretar. A inteligência é uma das principais distinções entre o ser humano e os outros animais. ";
     $RESPONSABILIDADE_VALUE="Responsável é o adjetivo que qualifica algo ou alguém que é capaz de responder pelos seus próprios atos ou pelas ações de outras pessoas, ou seja, que assume a responsabilidade";
-
+    include "../Model/States.php";
 ?>
 
 <!DOCTYPE html>
@@ -101,33 +101,9 @@ session_start();
                                                 <input type="text" class="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
 
                                                 <select name="estado_user" id="estado" style="min-width: 47%" >
-                                                    <option value="Acre">Acre</option>
-                                                    <option value="Alagoas" >Alagoas</option>
-                                                    <option value="Amapá" >Amapá</option>
-                                                    <option value="Amazonas" >Amazonas</option>
-                                                    <option value="Bahia" >Bahia</option>
-                                                    <option value="Ceará" >Ceará</option>
-                                                    <option value="Distrito Federal" >DF</option>
-                                                    <option value="Espírito Santo" >ES</option>
-                                                    <option value="Goiás" >GO</option>
-                                                    <option value="Maranhão" >MA</option>
-                                                    <option value="Mato Grosso" >MT</option>
-                                                    <option value="Mato Grosso do Sul" >MS</option>
-                                                    <option value="Minas Gerais" >MG</option>
-                                                    <option value="Pará" >PA</option>
-                                                    <option value="Paraíba" >PB</option>
-                                                    <option value="Paraná" >PR</option>
-                                                    <option value="Pernambuco" >PE</option>
-                                                    <option value="Piauí" >PI</option>
-                                                    <option value="Rio de Janeiro" >RJ</option>
-                                                    <option value="Rio Grande do Norte" >RN</option>
-                                                    <option value="Rio Grande do Sul" >  RS   </option>
-                                                    <option value="Rondônia" >RO</option>
-                                                    <option value="Roraima" >RR</option>
-                                                    <option value="Santa Catarina" >SC</option>
-                                                    <option value="São Paulo" >SP</option>
-                                                    <option value="Sergipe" >SE</option>
-                                                    <option value="Tocantins" >TO</option>
+                                                    <?php for ($i=0;$i<=count($estados);$i++){ require_once "../Model/States.php"; $estados = setStates();?>
+                                                    <option value=<?php echo $estados [$i];?>><?php echo $estados[$i];?></option>
+                                                    <?php } ?>
                                                     </optgroup>
 
                                                 </select><input type="text" class="input_css" name="pais_user"   style="width: 50%;" placeholder="PAIS" ><br>
