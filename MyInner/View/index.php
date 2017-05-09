@@ -37,9 +37,10 @@ session_start();
 
     <script src="jquery.js" type="text/javascript"></script>
     <script src="jquery.maskedinput.js" type="text/javascript">
+    <script type="text/javascript">
     jQuery(function($){
     $("#cpf_user").mask("999.999.999-99");
-    $("#phone").mask("(999) 999-9999");
+    $("#txt_datanasc").mask("(999) 999-9999");
     $("#tin").mask("99-9999999");
     $("#ssn").mask("999-99-9999");
     });
@@ -168,7 +169,7 @@ session_start();
         <?php } unset($_SESSION['Error_Login']);?>
 
         <?php if (isset($_SESSION['RegisterOk'])) { ?>
-            <div style="margin:0;" class="alert alert-danger text-center" role="alert"><b>Sucesso:</b> Cadastro realizado com suceso. Por favor efetue o login para proseguir.</div>
+            <div style="margin:0;" class="alert alert-success text-center" role="alert"><b>Sucesso:</b> Cadastro realizado com suceso. Por favor efetue o login para proseguir.</div>
         <?php } unset($_SESSION['RegisterOk']);?>
 
 
