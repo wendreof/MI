@@ -6,6 +6,8 @@ vendor/
 *.so
 # Para todos os arquivos e sub-pastas localizados na pasta bower_components/
 bower_components
+#Ignore ConnectionFactory
+Controller/ConnectionFactory.php
 
 
 ### PhpStorm ###
