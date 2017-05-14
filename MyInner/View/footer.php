@@ -54,7 +54,9 @@
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="text-muted">Copyright &copy; MyInner 2017</p>
+    <p class="text-muted">Copyright &copy; MyInner 2017 -  Olá! Leu até aqui? Anda preocupado com os mínimos detalhes,
+        né? A gente também. Por isso decidimos aproveitar até o rodapé pra falar com você. Cadastre-se seja parte
+        da nossa revolução.</p>
 </footer>
 </div>
 </body>

@@ -6,7 +6,7 @@ if ($_SESSION['valid']){
 ?>
 <!DOCTYPE html>
 <html>
-<title>My Inner</title>
+<title>My Inner - A revolução ema avaliações.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon" />
