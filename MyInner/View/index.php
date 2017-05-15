@@ -185,9 +185,9 @@ session_start();
                         <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Visão</h4>
-                    <p class="text-muted">Nossa visão baseia-se em fortalecer a confiança do mercado inter-pessoal.Gerando travez de nosso sistema um ponto
-                    de referência a todos aquele que necessitarem de um apoio em sua palavra de honestidade,tendo em vista o E-Commerce como um dos principais
-                        focos pela falta de referencia existente hoje na Internet.</p>
+                    <p class="text-muted">Nossa visão baseia-se em fortalecer a confiança do mercado inter-pessoal.Gerando através de nosso sistema um ponto
+                        de referência a todos aquele que necessitarem de um apoio em sua palavra de honestidade, tendo em vista o E-Commerce como um dos principais
+                        focos pela falta de referencia existente hoje na Internet .</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -196,8 +196,7 @@ session_start();
                     </span>
                     <h4 class="service-heading">Missão</h4>
                     <p class="text-muted">O foco é oferecer credibilidade correto ? Então nada mais do que claro é o nosso comprometimento com a segurança
-                        e o processamento dos dados aqui fornecidos para credibilizar e autenticar a eficacia do sistema.Tornando-nos uma ree social confiavel
-                        em nossos conteudos.</p>
+                        e o processamento dos dados aqui fornecidos para credibilizar e autenticar a eficácia do sistema. Tornando-nos uma rede social confiável em nossos conteúdos .</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -205,7 +204,7 @@ session_start();
                         <i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Valores</h4>
-                    <p class="text-muted">Os nossos valores baseiam-se em nossos navegantes. Junstos iremos tornar um mundo melhor baseado em valores reais ausentes no mundo de hoje.</p>
+                    <p class="text-muted">Os nossos valores baseiam-se em nossos navegantes. Juntos iremos tornar um mundo melhor baseado em valores reais ausentes no mundo de hoje.</p>
                 </div>
             </div>
         </div>
@@ -269,7 +268,11 @@ session_start();
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="../Assets/img/3.jpg" class="img-responsive img-circle" alt="">
+<<<<<<< HEAD
+                        <img src="../Assets/img/Marcus.jpeg" class="img-responsive img-circle" alt="">
+=======
+                        <img src="../Assets/img/Marcus.jpg" class="img-responsive img-circle" alt="">
+>>>>>>> f2de8bd58fa15c0d2af3585d8adf045eb98e7492
                         <h4>Marcus Cantarelli</h4>
                         <p class="text-muted">Analist Senior</p>
                         <ul class="list-inline social-buttons">
@@ -299,20 +302,20 @@ session_start();
                 <div class="col-lg-12 text-center">
                     <h3>Aspectos avaliados </h3>
                     <div class="tooltip-demo">
-                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="left" data-content="<?php echo $ETICA_VALUE; ?>">
-                            ÉTICA
+                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<?php echo $ETICA_VALUE; ?>">
+                            ÉTICA &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </button>
                         <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="<?php echo $MORAL_VALUE; ?>">
-                            MORAL
+                            MORAL &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </button>
                         <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<?php echo $HONESTIDADE_VALUE; ?>">
-                            HONESTIDADE
+                            HONESTIDADE &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </button>
                         <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="top" data-content="<?php echo $INTELIGENCIA_VALUE; ?>">
-                            INTELIGENCIA
+                            INTELIGENCIA &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </button>
-                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="right" data-content="<?php echo $RESPONSABILIDADE_VALUE; ?>">
-                            RESPONSABILIDADE
+                        <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<?php echo $RESPONSABILIDADE_VALUE; ?>">
+                            RESPONSABILIDADE &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
 
                         </button>
                     </div>
