@@ -21,7 +21,7 @@ session_start();
     <meta name="description" content="">
     <meta name="Douglas" content="Autor">
     <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon" />
-    <title>MyInner</title>
+    <title>MyInner - A revolução ema avaliações.</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../Assets/css/index.min.css" rel="stylesheet">
@@ -69,7 +69,7 @@ session_start();
                     <a href="#about" style="text-decoration: none"><button class="btn btn-success">My Inner ?</button>&nbsp;&nbsp;</a>
                     <a href="#services" style="text-decoration: none"><button class="btn btn-success" href="#services">Objetivos</button>&nbsp;&nbsp;</a>
                     <a href="#team" style="text-decoration: none"><button class="btn btn-success" href="#team">Quem Somos</button>&nbsp;&nbsp;</a>
-                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Cadastrar-me</button>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Cadastre-se Gratuitamente</button>
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -162,8 +162,17 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Aqui ficara uma fase falando sobre o myinner, curiosidades etc</h2>
-                    <p class="lead">se voçe ainda não faz parte cadastre para começar a fazer parte desta nova era de redes sociais <a data-toggle="modal" data-target="#myModal" href="#">Cadastrar</a>.</p>
+                    <h2>Pra quê guardar tudo só pra você?</h2>
+                    <p class="lead">Divulgue suas avaliações.<br/>
+                    Faça uma avaliação quando e como quiser.<br/>
+                        Mostre o quão bom você é. </p>
+
+                    <h2>Curiosidades</h2>
+                    <p class="lead">Sabia que se trata de uma inicitiva brasileira?<br/>
+                        E que foi idealizada e desenvolvida por alunos do interior de São Paulo?<br/>
+                        Quem foi que disse que as grandes ideias estão apenas nas capitais? ;)</p>
+
+                    <p class="lead">Se você ainda não faz parte, cadastre-se e venha fazer parte desta nova era de redes sociais <Strong><a data-toggle="modal" data-target="#myModal" href="#">Cadastre-se Gratuitamente</a>.</p></Strong>
                 </div>
             </div>
             <!-- /.row -->
@@ -177,7 +186,7 @@ session_start();
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Nossos Objetivos</h2>
-                    <h3 class="section-subheading text-muted">Você ainda não sabe por que cadastra-se no nosso sistema ?.</h3>
+                    <h3 class="section-subheading text-muted">Você ainda não sabe por que cadastra-se no nosso sistema?</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -218,7 +227,7 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">De Quem Foi a Idéia ?</h2>
+                    <h2 class="section-heading">De Quem Foi a Idéia?</h2>
                     <h3 class="section-subheading text-muted">Aqui estão os responsaveis..</h3>
                 </div>
             </div>
@@ -328,13 +337,13 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Por que ser BOM ainda importa !</strong>
+                    <h4><strong>Por que ser BOM ainda importa!</strong>
                     </h4>
-                    <p>3481 Endereco
-                        <br>Rua aqui, Pais CEP</p>
+                    <p>Rua Vale do Silício, 4º andar, sala 03
+                        <br>São Paulo, Brasil 1312345</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i>Telefone 235346356</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">contato@myinner.com</a>
                         </li>
                     </ul>
                     <br>
@@ -347,7 +356,9 @@ session_start();
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; MyInner 2017</p>
+                    <p class="text-muted">Copyright &copy; MyInner 2017 -  Olá! Leu até aqui? Anda preocupado com os mínimos detalhes,
+                        né? A gente também. Por isso decidimos aproveitar até o rodapé pra falar com você. Cadastre-se seja parte
+                        da nossa revolução.</p>
                 </div>
             </div>
         </div>
