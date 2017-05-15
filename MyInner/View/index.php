@@ -38,8 +38,6 @@ session_start();
  </head>
 
 <body>
-
-
     <!-- Navigation -->
     <!-- Navigation -->
     <nav class="navbar navbar-inverse">
@@ -137,10 +135,8 @@ session_start();
             <div style="margin:0;" class="alert alert-success text-center" role="alert"><b>Sucesso:</b> Cadastro realizado com suceso. Por favor efetue o login para proseguir.</div>
         <?php } unset($_SESSION['RegisterOk']);?>
 
-
     </nav>
         <!-- /.container-fluid -->
-
     <!-- Header -->
      <header id="top" class="header">
 
