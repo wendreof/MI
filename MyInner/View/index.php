@@ -280,7 +280,7 @@ session_start();
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="../Assets/img/3.jpg" class="img-responsive img-circle" alt="">
+                        <img src="../Assets/img/Marcus.jpeg" class="img-responsive img-circle" alt="">
                         <h4>Marcus Cantarelli</h4>
                         <p class="text-muted">Analist Senior</p>
                         <ul class="list-inline social-buttons">
