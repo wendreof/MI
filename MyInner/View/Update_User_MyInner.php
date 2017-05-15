@@ -32,7 +32,6 @@
                 <p><input type="submit" name="register_bt" id="update-bt" class="w3-theme-l2 w3-button-shape" value="Atualizar" ></p>
 
         </form><br><br>
-        <p>Eai tem certeza ?</p>  <a href="../Controller/Delete_User.php"><input type="button" name="register_bt" id="delete-bt" class="w3-theme-l2 w3-button-shape" value="Sim :(" ></a><br><br>
 
     </div>
     <!-- End Middle Column -->
