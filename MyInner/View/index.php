@@ -35,18 +35,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
-    <script src="jquery.js" type="text/javascript"></script>
-    <script src="jquery.maskedinput.js" type="text/javascript">
-    <script type="text/javascript">
-    jQuery(function($){
-    $("#cpf_user").mask("999.999.999-99");
-    $("#txt_datanasc").mask("(999) 999-9999");
-    $("#tin").mask("99-9999999");
-    $("#ssn").mask("999-99-9999");
-    });
-    </script>
-
-</head>
+ </head>
 
 <body>
 
@@ -95,8 +84,8 @@ session_start();
                                                         <input type="radio" id="input_css" name="sexo_user"  value="M" checked/><label for="input_css">Masculino</label>
                                                         <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
                                                 </legend>
-                                                <input type="date" class="input_css" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
-                                                <input type="text" id="cpf_user" class="input_css" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
+                                                <input type="date" class="input_css date" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                                                <input type="text" id="cpf_user" class="input_css cpf" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
                                                 <input type="text" class="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
                                                 <input type="text" class="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
 
@@ -458,6 +447,13 @@ session_start();
         // popover demo
         $("[data-toggle=popover]")
             .popover()
+    </script>
+    <script src="../Assets/js/jquery.mask.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.date').mask('00/00/0000');
+            $(".cpf").mask("999.999.999-99");
+        });
     </script>
 </body>
 

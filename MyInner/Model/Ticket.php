@@ -1,6 +1,5 @@
 <?php
 require_once 'User.php';
-require_once 'InterfaceTicket.php';
 
 /**
  * Created by PhpStorm.
