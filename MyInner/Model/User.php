@@ -1,5 +1,4 @@
 <?php
-require_once 'InterfaceTicket.php';
 
 /**
  * Created by PhpStorm.
@@ -8,28 +7,8 @@ require_once 'InterfaceTicket.php';
  * Time: 20:05
  */
 
-class User implements InterfaceTicket{
-
-    public function openTicket()
-    {
-        echo "<p>Ticket Aberto...</p>";
-    }
-
-    public function answerTicket()
-    {
-        // TODO: Implement answerTicket() method.
-    }
-
-    public function writeTicket(){
-
-    }
-
-    public function closeTicket()
-    {
-        echo "<p>Ticket fechado...</p>";
-    }
-
-                                    //**********atributos*******
+class User {
+    //**********atributos*******
     private $ID_USER, $NOME_USER, $SOBRENOME_USER;
     private $ENDERECO_USER, $EMAIL_USER, $SEXO_USER;
     private $CIDADE_USER, $ESTADO_USER, $PAIS_USER;
@@ -40,33 +19,11 @@ class User implements InterfaceTicket{
      * User constructor.
      * @param $ID_USER
      * @param $NOME_USER
-     * @param $SOBRENOME_USER
-     * @param $ENDERECO_USER
-     * @param $EMAIL_USER
-     * @param $SEXO_USER
-     * @param $CIDADE_USER
-     * @param $ESTADO_USER
-     * @param $PAIS_USER
-     * @param $DATANASC_USER
-     * @param $ROLE_USER
-     * @param $USER_NAME
-     * @param $CHECKBOXCONTRATO
      */
-    public function __construct($ID_USER, $NOME_USER, $SOBRENOME_USER, $ENDERECO_USER, $EMAIL_USER, $SEXO_USER, $CIDADE_USER, $ESTADO_USER, $PAIS_USER, $DATANASC_USER, $ROLE_USER, $USER_NAME, $CHECKBOXCONTRATO)
+    public function __construct($ID_USER, $NOME_USER)
     {
         $this->ID_USER = $ID_USER;
         $this->NOME_USER = $NOME_USER;
-        $this->SOBRENOME_USER = $SOBRENOME_USER;
-        $this->ENDERECO_USER = $ENDERECO_USER;
-        $this->EMAIL_USER = $EMAIL_USER;
-        $this->SEXO_USER = $SEXO_USER;
-        $this->CIDADE_USER = $CIDADE_USER;
-        $this->ESTADO_USER = $ESTADO_USER;
-        $this->PAIS_USER = $PAIS_USER;
-        $this->DATANASC_USER = $DATANASC_USER;
-        $this->ROLE_USER = $ROLE_USER;
-        $this->USER_NAME = $USER_NAME;
-        $this->CHECKBOXCONTRATO = $CHECKBOXCONTRATO;
     }
 
 
@@ -74,7 +31,7 @@ class User implements InterfaceTicket{
     public function buscarUsuario(){
 
     }
-    public function avaliar(){
+    public function avaliar($usuario){
 
     }
                                     //*********GETTERS*********
