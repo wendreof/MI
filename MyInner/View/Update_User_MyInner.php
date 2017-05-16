@@ -11,7 +11,7 @@
                 <input type="hidden" name="id_user" style="min-width: 50%" value="<?php echo $_SESSION['ID_USER']; ?>" >
                 <input type="text" class="input_css" style="min-width: 33%" value="<?php echo $_SESSION['NOME_USER']; ?>"name="name_user" id="txt_name" maxlength="15"  required placeholder="NOME ">
                 <input type="text" class="input_css" style="min-width: 30%" value="<?php echo $_SESSION['SOBRENOME_USER']; ?>"name="sobrenome_user" id="sobrenome" maxlength="15"  required placeholder="SOBRENOME">
-                <input type="date" class="input_css" style="min-width: 28%" value="<?php echo $_SESSION['DATANASC_USER']; ?>"name="datanasc_user" id="txt_datanasc" maxlength="10"  placeholder="DATA NASCIMENTO" required>
+                <input type="date" class="input_css" style="min-width: 28%" value="<?php echo date('d-m-Y', strtotime($_SESSION['DATANASC_USER'])) ?>"name="datanasc_user" id="txt_datanasc" maxlength="10"  placeholder="DATA NASCIMENTO" required>
                 <fieldset class="text-center" style="width: 50% ; margin-left: 180px ; margin-bottom: 6px"><legend>SEXO :</legend>
                     <input type="radio" id="input_css" name="sexo_user"  value="M" required/><label for="input_css">Masculino</label>
                     <input type="radio" id="input_css" name="sexo_user" value="F" required/><label for="input_css">Feminino</label>

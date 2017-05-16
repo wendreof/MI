@@ -31,7 +31,6 @@ session_start();
     <link href="../Assets/css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
@@ -82,7 +81,7 @@ session_start();
                                                         <input type="radio" id="input_css" name="sexo_user"  value="M" checked/><label for="input_css">Masculino</label>
                                                         <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
                                                 </legend>
-                                                <input type="date" class="input_css date" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                                                <input type="text" class="input_css date" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
                                                 <input type="text" id="cpf_user" class="input_css cpf" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
                                                 <input type="text" class="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
                                                 <input type="text" class="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
@@ -171,7 +170,7 @@ session_start();
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Nossos Objetivos</h2>
-                    <h3 class="section-subheading text-muted">Você ainda não sabe por que cadastra-se no nosso sistema?</h3>
+                    <h3 class="section-subheading text-muted">Você ainda não entendeu o que queremos? Pois bem vamos la, leia abaixo qual é a nossa .....</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -200,7 +199,7 @@ session_start();
                         <i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Valores</h4>
-                    <p class="text-muted">Os nossos valores baseiam-se em nossos navegantes. Juntos iremos tornar um mundo melhor baseado em valores reais ausentes no mundo de hoje.</p>
+                    <p class="text-muted">Os nossos valores baseiam-se em nossos navegantes. Juntos iremos tornar um mundo melhor baseado em valores reais ausentes atualmente.</p>
                 </div>
             </div>
         </div>
@@ -223,12 +222,9 @@ session_start();
                         <h4>Douglas Domenciano</h4>
                         <p class="text-muted">Founder and CEO</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href=""><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/douglas.junior.948" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/douglas-domenciano-84a04212b" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
+                            <li><a href="https://www.facebook.com/douglas.junior.948" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/douglas-domenciano-84a04212b" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -238,12 +234,9 @@ session_start();
                         <h4>Wendreo Fernandes</h4>
                         <p class="text-muted">Co-Founder and CTO</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/wendreofoficial"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/wendreo.fernandes"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/wendreo-luciano-fernandes-04b887106/"><i class="fa fa-linkedin"></i></a>
-                            </li>
+                            <li><a href="https://www.facebook.com/wendreo.fernandes" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/wendreo-luciano-fernandes-04b887106/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/wendreofoficial" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -253,12 +246,9 @@ session_start();
                         <h4>Pedro Bono</h4>
                         <p class="text-muted">Analist Senior</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -269,19 +259,16 @@ session_start();
                         <h4>Marcus Cantarelli</h4>
                         <p class="text-muted">Analist Senior</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Nós somos apenas jovens estudantes de Analise e Desenvolvimento de Sistemas, tentando com nossos conhecimentos transformar o mundo em algo melhor.</p>
+                    <p class="large text-muted">Nós somos jovens estudantes de Analise e Desenvolvimento de Sistemas, tentando com nossos conhecimentos transformar o mundo em algo melhor.</p>
                 </div>
             </div>
         </div>
@@ -448,7 +435,7 @@ session_start();
     <script src="../Assets/js/jquery.mask.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.date').mask('00/00/0000');
+            $('.date').mask('00-00-0000');
             $(".cpf").mask("999.999.999-99");
         });
     </script>

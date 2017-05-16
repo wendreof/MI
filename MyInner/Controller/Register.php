@@ -11,11 +11,12 @@
         $check = mysqli_query($conexao, $sql_check);
 
 
-        // Se encontrou o login/senha, loga...
-        if (mysqli_num_rows($check) >0) {
-            // Redireciona para página
+
+        if ( mysqli_num_rows($check) >0) {
+
             $check = mysqli_fetch_array($check);
             $_SESSION['RegError'] = $check [0];
+
 
             header("Location: ../View/index.php");
             setcookie("USER_NAME", $_POST["user_name"], time()+3600);
@@ -32,6 +33,8 @@
 
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+
+
                 $email_user = mysqli_real_escape_string($conexao, $_POST['email_user']);
                 $user_name = mysqli_real_escape_string($conexao, $_POST['user_name']);
                 $password = mysqli_real_escape_string($conexao, md5($_POST['password_user']));
@@ -40,7 +43,7 @@
                 $sobrenome_user = mysqli_real_escape_string($conexao, $_POST['sobrenome_user']);
                 $cpf_user = mysqli_real_escape_string($conexao, sha1($_POST['cpf_user']));
                 $sexo_user = mysqli_real_escape_string($conexao, $_POST['sexo_user']);
-                $datanasc_user = mysqli_real_escape_string($conexao, $_POST['datanasc_user']);
+                $datanasc_user = mysqli_real_escape_string($conexao, date('Y-m-d', strtotime($_POST['datanasc_user'])));
                 $endereco_user = mysqli_real_escape_string($conexao, $_POST['endereco_user']);
                 $cidade_user = mysqli_real_escape_string($conexao, $_POST['cidade_user']);
                 $estado_user = mysqli_real_escape_string($conexao, $_POST['estado_user']);
@@ -52,9 +55,9 @@
                 mysqli_query($conexao, $sql_Login);
                 mysqli_query($conexao, $sql_Register);
                 header("Location: ../View/index.php");
-                $_SESSION['RegisterOk']=true;
+                $_SESSION['RegisterOk'] = true;
+
 
             }
         }
-
 ?>

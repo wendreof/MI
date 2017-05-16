@@ -217,6 +217,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .estrelas input[type=radio]:checked ~ label i.fa:before {color: #CCC;}
 .input_css {border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #fff;-moz-box-shadow: 1px
 1px 2px #fff;-webkit-box-shadow: 1px 1px 2px #fff;background: #fff;border:1px ridge rgba(0,0,0,.2);height: 40px;text-align: center; margin: 3px}
-select#estado{text-align: center;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #fff;-moz-box-shadow: 1px 1px 2px #fff;-webkit-box-shadow: 1px 1px 2px #fff;background: #fff;border:1px ridge rgba(0,0,0,.2);height: 40px;}
+select#estado{text-align: center;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:4px;box-shadow: 1px 1px 2px #fff;-moz-box-shadow: 1px 1px 2px #fff;-webkit-box-shadow: 1px 1px 2px #fff;background: #fff;border:1px ridge rgba(0,0,0,.2);height: 40px; position: relative;}
 
 
