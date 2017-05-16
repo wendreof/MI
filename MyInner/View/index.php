@@ -279,11 +279,8 @@ session_start();
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-<<<<<<< HEAD
+
                         <img src="../Assets/img/Marcus.jpeg" class="img-responsive img-circle" alt="">
-=======
-                        <img src="../Assets/img/Marcus.jpg" class="img-responsive img-circle" alt="">
->>>>>>> f2de8bd58fa15c0d2af3585d8adf045eb98e7492
                         <h4>Marcus Cantarelli</h4>
                         <p class="text-muted">Analist Senior</p>
                         <ul class="list-inline social-buttons">
@@ -299,7 +296,7 @@ session_start();
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large text-muted">Nós somos apenas jovens estudantes de Analise e Desenvolvimento de Sistemas, tentando com nossos conhecimentos transformar o mundo em algo melhor.</p>
                 </div>
             </div>
         </div>
@@ -313,6 +310,7 @@ session_start();
                 <div class="col-lg-12 text-center">
                     <h3>Aspectos avaliados </h3>
                     <div class="tooltip-demo">
+                        <p class="large">Caso você não saiba as definições de cada aspecto, dispomos uma breve explicação para o entendimento e direcionamento das avaliações.</p>
                         <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<?php echo $ETICA_VALUE; ?>">
                             ÉTICA &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </button>
