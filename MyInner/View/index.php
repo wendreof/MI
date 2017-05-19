@@ -20,19 +20,17 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="Douglas" content="Autor">
-    <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon" />
-    <title>MyInner - A revolução ema avaliações.</title>
+    <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon"/>
+    <title>MyInner - Seu Ponto de confiança.</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../Assets/css/index.min.css" rel="stylesheet">
-    <link href="../Assets/css/Template_MyInner.css" rel="stylesheet">
-    <link href="../Assets/css/agency.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="../Assets/css/stylish-portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/css/index.min.css"/>
+    <link rel="stylesheet" href="../Assets/css/Index_Icons.min.css"/>
+    <link rel="stylesheet" href="../Assets/css/stylish-portfolio.css"/>
 
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
  </head>
 
@@ -62,39 +60,40 @@ session_start();
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">Formulário de registro</h4>
+                                        <h4 class="modal-title text-center" id="myModalLabel">Formulário de registro</h4>
                                     </div>
-                                    <div class="modal-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <div class="modal-body container-fluid">
+                                        Pode ficar tranquilo todos seus dados pessoais de extrema importancia será guardado com maxima segurança, nosso sistema fara sempre o
+                                        maximo para assegurar seus dados confie em nós. E aproveite o novo mundo de chances para mostrar a todos quem você é. Vamos lá!
                                         <form action="../Controller/Register.php" method="post"  name="formlogin">
                                            <div class="form-signup-login">
-                                            <h3>Dados de Login</h3>
-                                            <br><input type="text" class="input_css" name="user_name" style="width: 50%;" maxlength="10"  required placeholder="USER NAME" >
-                                            <input type="password" style="width: 47%" class="input_css" name="password_user" maxlength="8"  required placeholder="PASSWORD"><br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
-                                            <input type="text" class="input_css" name="email_user" style="width: 98%;" maxlength="255"  required placeholder="EMAIL"><br>
-                                            <hr>
-                                            <h3>Dados de Usuario</h3>
-                                            <div class="form-group">
-                                                <input type="text" class="input_css" name="name_user" id="txt_name" style="width: 50%;" maxlength="15" required placeholder="NOME ">
-                                                <input type="text" class="input_css" name="sobrenome_user" id="sobrenome" style="width: 47%;" maxlength="15"  required placeholder="SOBRENOME">
-                                                <legend>SEXO :
-                                                        <input type="radio" id="input_css" name="sexo_user"  value="M" checked/><label for="input_css">Masculino</label>
-                                                        <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
-                                                </legend>
-                                                <input type="text" class="input_css date" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
-                                                <input type="text" id="cpf_user" class="input_css cpf" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
-                                                <input type="text" class="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
-                                                <input type="text" class="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
+                                                    <h3 class="text-center">Dados de Login</h3>
+                                                    <br><input type="text" class="input_css" name="user_name" style="width: 50%;" maxlength="10"  required placeholder="USER NAME" >
+                                                    <input type="password" style="width: 47%" class="input_css" name="password_user" maxlength="8"  required placeholder="PASSWORD"><br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
+                                                    <input type="text" class="input_css" name="email_user" style="width: 98%;" maxlength="255"  required placeholder="EMAIL"><br>
+                                                    <hr>
+                                                    <h3 class="text-center  ">Dados de Usuario</h3>
+                                                    <div class="form-group">
+                                                            <input type="text" class="input_css" name="name_user" id="txt_name" style="width: 50%;" maxlength="15" required placeholder="NOME ">
+                                                            <input type="text" class="input_css" name="sobrenome_user" id="sobrenome" style="width: 47%;" maxlength="15"  required placeholder="SOBRENOME">
+                                                            <legend class="text-center">SEXO :
+                                                                    <input type="radio" id="input_css" name="sexo_user"  value="M" checked/><label for="input_css">Masculino</label>
+                                                                    <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
+                                                            </legend>
+                                                            <input type="text" class="input_css date" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                                                            <input type="text" id="cpf_user" class="input_css cpf" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
+                                                            <input type="text" class="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
+                                                            <input type="text" class="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
 
-                                                <select name="estado_user" id="estado" style="min-width: 47%" >
-                                                    <?php for ($i=0;$i<=count($estados);$i++){ require_once "../Model/States.php"; $estados = setStates();?>
-                                                    <option value=<?php echo $estados [$i];?>><?php echo $estados[$i];?></option>
-                                                    <?php } ?>
-                                                    </optgroup>
+                                                            <select name="estado_user" id="estado" style="min-width: 47%" >
+                                                                <?php for ($i=0;$i<=count($estados);$i++){ require_once "../Model/States.php"; $estados = setStates();?>
+                                                                <option value=<?php echo $estados [$i];?>><?php echo $estados[$i];?></option>
+                                                                <?php } ?>
+                                                                </optgroup>
 
-                                                </select><input type="text" class="input_css" name="pais_user"   style="width: 50%;" placeholder="PAIS" ><br>
-                                                <p><input type="checkbox" name="terms_acept"  value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
-                                            </div>
+                                                            </select><input type="text" class="input_css" name="pais_user"   style="width: 50%;" placeholder="PAIS"><br>
+                                                            <p class="text-center"><input type="checkbox" name="terms_acept"  value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
+                                                    </div>
                                            </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
@@ -133,7 +132,7 @@ session_start();
         <?php if (isset($_SESSION['RegisterOk'])) { ?>
             <div style="margin:0;" class="alert alert-success text-center" role="alert"><b>Sucesso:</b> Cadastro realizado com suceso. Por favor efetue o login para proseguir.</div>
         <?php } unset($_SESSION['RegisterOk']);?>
-
+    </nav>
     </nav>
         <!-- /.container-fluid -->
     <!-- Header -->
@@ -142,28 +141,34 @@ session_start();
     </header>
 
     <!-- About -->
+    <br><br><br>
     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Pra quê guardar tudo só pra você?</h2>
+                    <h3>O que é o My Inner ?</h3>
+                    <p class="lead"> O My Inner é que uma rede social. Voltada a avaliações pessoais para duvigar suas qualidades e seus pontos a serem melhorados </p>
+                    <h4>Aproveite para visualizar o que as pessoas pensam sobre você !</h4>
                     <p class="lead">Divulgue suas avaliações.<br/>
                     Faça uma avaliação quando e como quiser.<br/>
                         Mostre o quão bom você é. </p>
 
-                    <h2>Curiosidades</h2>
+                    <h4>Curiosidades</h4>
                     <p class="lead">Sabia que se trata de uma inicitiva brasileira?<br/>
-                        E que foi idealizada e desenvolvida por alunos do interior de São Paulo?<br/>
-                        Quem foi que disse que as grandes ideias estão apenas nas capitais? ;)</p>
+                        E que foi idealizada e desenvolvida por alunos do interior de São Paulo?</br>
+                        Quem foi que disse que as grandes ideias estão apenas nas capitais? ;)<br>
+                    Se você ainda não faz parte, cadastre-se e venha fazer parte desta nova era de redes sociais
+                        <Strong><a data-toggle="modal" data-target="#myModal" href="#">Cadastre-se Gratuitamente</a></Strong>.</p>
 
-                    <p class="lead">Se você ainda não faz parte, cadastre-se e venha fazer parte desta nova era de redes sociais <Strong><a data-toggle="modal" data-target="#myModal" href="#">Cadastre-se Gratuitamente</a>.</p></Strong>
+                    <h4>Duvidas ?</h4>
+                    <p class="lead">Ainda possui duvidas ? Leia abaixo nossos Objetivos, que explicará nossa missão, visão e nossos valores ! </p><p class="fa fa-arrow-down"></p>
                 </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-
+    <br><br><br>
     <!-- Services Section -->
     <section id="services">
         <div class="container">
@@ -280,9 +285,13 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>Aspectos avaliados </h3>
+
+
+                    <h3>E como será feita a avaliação ? </h3>
                     <div class="tooltip-demo">
-                        <p class="large">Caso você não saiba as definições de cada aspecto, dispomos uma breve explicação para o entendimento e direcionamento das avaliações.</p>
+                        <p class="large">Nosso método de avaliação será guiado por aspectos comuns e necessarios na sociedade disposotos abaixo, acrecidos de um breve trecho de mensagem para
+                            explicações,elogios ou sugestões.
+                            E caso você não saiba as definições de cada aspecto, dispomos uma breve explicação para o entendimento e direcionamento das avaliações.</p>
                         <button type="button" class="btn btn-success btn-lg" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<?php echo $ETICA_VALUE; ?>">
                             ÉTICA &nbsp; <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </button>

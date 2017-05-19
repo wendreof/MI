@@ -13,11 +13,11 @@ if ($_SESSION['valid']){
 <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon" />
 <link rel="stylesheet" href="../Assets/css/Template_MyInner.css">
 <link rel="stylesheet" href="../Assets/css/Template_Css.css">
+<link rel="stylesheet" href="../Assets/css/Core.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-</style>
     </head>
 <body class="w3-theme-l5">
 
@@ -27,7 +27,7 @@ if ($_SESSION['valid']){
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
         <a href="Dashboard_MyInner.php" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" title="Dashboard"><i class="fa fa-home w3-margin-right"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Ir ao topo"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
-        <a href="Update_User_MyInner.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Configurações de Conta"><i class="fa fa-user"></i></a>
+        <a href="Update_User_MyInner.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Configurações de Conta"><i class="fa fa-gear"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Avaliar"><i class="fa fa-star-o"></i></a>
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">1</span></button>
@@ -74,7 +74,7 @@ if ($_SESSION['valid']){
                 <div class="w3-white">
                     <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heartbeat fa-fw w3-margin-right"></i> Minhas Avaliações</button>
                     <div id="Demo1" class="w3-hide w3-container">
-                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Como estou...</b></p>
+                        <br>
 
                         <div class="estrelas-all">
                     <?php for ($i=0;$i<5;$i++){ ?>
