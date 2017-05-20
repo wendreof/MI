@@ -27,7 +27,7 @@ class User {
     }
 
 
-    //*********metodos especiais*********
+                             //*********metodos especiais*********
     public function buscarUsuario(){
 
     }
