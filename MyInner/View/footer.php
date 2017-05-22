@@ -21,9 +21,9 @@
                 </div>
                 <p><strong>Uma frase sobre sua nota</strong></p>
                 <p>Que tal mostrar a todos seus amigos ?<br> Compartilhe.</p>
-                <p><button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-facebook-official"></button>
-                    <button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-instagram"></button>
-                    <button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-twitter"></button>
+                <p><button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-facebook-official fa-2x"></button>
+                    <button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-instagram fa-2x"></button>
+                    <button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-twitter fa-2x"></button>
                 </p>
             </div>
         </div>
@@ -48,15 +48,14 @@
 <!-- End Page Container -->
 <footer class="w3-container w3-teal w3-center w3-margin-top">
     <p>Siga-nos em nossas paginas nas redes sociais.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="text-muted">Copyright &copy; MyInner 2017 -  Olá! Leu até aqui? Anda preocupado com os mínimos detalhes,
-        né? A gente também. Por isso decidimos aproveitar até o rodapé pra falar com você. Cadastre-se seja parte
-        da nossa revolução.</p>
+    <i class="fa fa-facebook-official fa-3x w3-hover-opacity"></i>
+    <i class="fa fa-instagram fa-3x w3-hover-opacity"></i>
+    <i class="fa fa-snapchat  fa-3x w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p fa-3x w3-hover-opacity"></i>
+    <i class="fa fa-twitter fa-3x w3-hover-opacity"></i>
+    <i class="fa fa-linkedin  fa-3x w3-hover-opacity"></i>
+    <br><p>Copyright &copy; -  MyInner 2017</p>
+
 </footer>
 </div>
 </body>
@@ -64,6 +63,7 @@
 
 
 <script>
+
     function checkstar(value) {
         var btn = document.getElementById("cm_star-"+value);
         btn.checked = true;
@@ -91,3 +91,4 @@
         }
     }
 </script>
+
