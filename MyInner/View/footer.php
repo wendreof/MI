@@ -4,57 +4,78 @@
     <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
             <p>Seus Amigos...</p>
-            <img src="../Assets/img/1.jpg" alt="Forest" style="width:100%;">
+            <img src="../Assets/img/1.jpg" style="width:100%;margin-bottom: auto">
             <p><strong>Nome do Amigo</strong></p>
             <p>Avalie tambem e contribua.(gerar um randon)</p>
-            <p><button class="w3-button-shape w3-block w3-theme-l2">Avaliar</button></p>
+            <p><button class="w3-button-shape w3-block w3-theme-l2 fa fa-star-o">&nbsp;&nbsp;Avaliar</button></p>
         </div>
     </div>
     <br>
 
     <div class="w3-card-2 w3-round w3-white w3-center">
-        <div class="w3-card-2 w3-round w3-white w3-center">
+
             <div class="w3-container">
                 <p>Media</p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+
+                <div class="estrelas">
+                    <input type="radio" id="cm_star-empty" name="fb" value="" />
+                    <label for="cm_star-1"><i class="fa" style="margin-left: -30px"></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1" />
+                    <label for="cm_star-2"><i class="fa" style="margin-left: -20px"></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                    <label for="cm_star-3"><i class="fa" style="margin-left: -20px"></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                    <label for="cm_star-4"><i class="fa" style="margin-left: -20px"></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                    <label for="cm_star-5"><i class="fa" style="margin-left: -20px"></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5" checked/>
                 </div>
+
                 <p><strong>Uma frase sobre sua nota</strong></p>
                 <p>Que tal mostrar a todos seus amigos ?<br> Compartilhe.</p>
-                <p><button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-facebook-official fa-2x"></button>
-                    <button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-instagram fa-2x"></button>
-                    <button type="submit" class="w3-button-shape  w3-theme-l2-social fa fa-twitter fa-2x"></button>
+                <p><button type="button" class="w3-circle   w3-theme-l2-social fa fa-facebook-official fa-2x" ></button>
+                    <button type="button" class="w3-circle  w3-theme-l2-social fa fa-instagram fa-2x" ></button>
+                    <button type="button" class="w3-circle  w3-theme-l2-social fa fa-twitter fa-2x" ></button>
                 </p>
             </div>
-        </div>
+
     </div>
+
     <br>
 
-    <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
-        <p>ADS</p>
-    </div>
-    <br>
-
-    <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center">
+    <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center" style="max-height: 240px">
         <p><i class="fa fa-bug w3-xxlarge"></i></p>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- MyInner-AD -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6417108901573951"
+             data-ad-slot="4434498227"
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+<br>
+    <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
+        <p>Siga-nos em nossas paginas nas redes sociais.</p>
+        <i class="fa fa-facebook-official fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-instagram fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-snapchat  fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-twitter fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-linkedin  fa-2x w3-hover-opacity"></i>
+        <br><p>Copyright &copy; -  MyInner 2017</p>
     </div>
 
     <!-- End Right Column -->
 </div>
 
 <!-- End Grid -->
-</div>
+
 
 <!-- End Page Container -->
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Siga-nos em nossas paginas nas redes sociais.</p>
-    <i class="fa fa-facebook-official fa-3x w3-hover-opacity"></i>
-    <i class="fa fa-instagram fa-3x w3-hover-opacity"></i>
-    <i class="fa fa-snapchat  fa-3x w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p fa-3x w3-hover-opacity"></i>
-    <i class="fa fa-twitter fa-3x w3-hover-opacity"></i>
-    <i class="fa fa-linkedin  fa-3x w3-hover-opacity"></i>
-    <br><p>Copyright &copy; -  MyInner 2017</p>
+<footer class="w3-container  w3-center w3-margin-top">
+
 
 </footer>
 </div>

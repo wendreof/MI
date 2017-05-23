@@ -2,11 +2,13 @@
 <!-- Content Section -->
 
 <div class="w3-col m7">
-    <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+    <div class="w3-container w3-card-2 w3-white w3-round w3-margin-left w3-margin-right"><br>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home" class="fa fa-user text-success"> Dados Pessoais</a></li>
-            <li><a data-toggle="tab" href="#menu1" class="fa fa-camera text-success"> Alterar Foto</a></li>
-            <li><a data-toggle="tab" href="#menu2" class="fa fa-sign-out text-success"> Deletar conta</a></li>
+            <li><a data-toggle="tab" href="#foto" class="fa fa-camera text-success"> Alterar Foto</a></li>
+            <li><a data-toggle="tab" href="#citacao" class="fa fa-file-text text-success"> Atualizar citação favorita</a></li>
+            <li><a data-toggle="tab" href="#deletar" class="fa fa-sign-out text-success"> Deletar conta</a></li>
+
         </ul>
 
         <div class="tab-content">
@@ -38,22 +40,23 @@
                 </select>
                 <input type="text" class="input_css" style="min-width: 49%" value="<?php echo $_SESSION['PAIS_USER']; ?>"name="pais_user" id="txt_name"   placeholder="PAIS" required>
             </div>
-                <p><input type="submit" name="register_bt" id="update-bt" class="w3-theme-l2 w3-button-shape" value="Atualizar" ></p>
+                <p><input type="submit" name="register_bt" id="update-bt" class="w3-theme-l2 w3-button-shape center-block" value="Atualizar" ></p>
 
         </form><br><br>
             </div>
-            <div id="menu1" class="tab-pane fade">
-                <h3>Inserir conteuro responsavel pela trocade imagens de perfil </h3>
+            <div id="foto" class="tab-pane fade">
+                <h4 class="text-center">CONTEUDO RESPONSAVEL POR TROCAR DE IMAGEN DE PERFIL  </h4>
 
             </div>
-            <div id="menu2" class="tab-pane fade">
+            <div id="deletar" class="tab-pane fade">
 
                         <h4 class="text-center"> Nós da Equipe My Inner sentiremos Muito a sua falta. </h4>
                         <h4 class="text-center">Mas caso essa seja sue real desejo nós ficaremos a dispozição em caso de retorno e estaremos de braços abertos.Mas lembre-se se você excluir sua conta todos
                             os seus dados serão perdidos,caso queira retornar terá de começar todo o processo de avaliação novamente.</h4>
                         <p class="text-center">Eai tem certeza ?</p>  <a href="../Controller/Delete_User.php"><input type="button" name="register_bt" id="delete-bt" class="w3-theme-l2 w3-button-shape center-block" value="Sim :(" ></a><br><br>
-
-
+            </div>
+            <div id="citacao" class="tab-pane fade">
+                <h4 class="text-center"> CONTEUDO RESPONSAVÉL PELA ADIÇÃO E AUTALIZAÇÃO DE CITAÇÃO </h4>
             </div>
         </div>
 
