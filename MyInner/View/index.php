@@ -259,10 +259,7 @@ session_start();
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-<<<<<<< HEAD
-=======
 
->>>>>>> 7cd87a8717fc8fb69f9e5db7cbb70497d97889d5
                         <img src="../Assets/img/Marcus.jpeg" class="img-responsive img-circle" alt="">
                         <h4>Marcus Cantarelli</h4>
                         <p class="text-muted">Analist Senior</p>
