@@ -11,43 +11,66 @@ if ($_SESSION['valid']){
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="../Public/favicon.png" type="image/x-icon" />
-<link rel="stylesheet" href="../Assets/css/Template_MyInner.css">
-<link rel="stylesheet" href="../Assets/css/Template_Css.css">
-<link rel="stylesheet" href="../Assets/css/Core.css">
+<link rel="stylesheet" href="../Assets/css/Template_MyInner.css"/>
+<link rel="stylesheet" href="../Assets/css/Template_Css.css"/>
+<link rel="stylesheet" href="../Assets/css/Core.css"/>
+<link rel="stylesheet" href="../Assets/css/stylish-portfolio.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
 <body class="w3-theme-l5">
 
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="Dashboard_MyInner.php" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" title="Dashboard"><i class="fa fa-home w3-margin-right"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Ir ao topo"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
-        <a href="Update_User_MyInner.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Configurações de Conta"><i class="fa fa-gear"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Avaliar"><i class="fa fa-star-o"></i></a>
-        <div class="w3-dropdown-hover w3-hide-small">
-            <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">1</span></button>
-            <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-                <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-                <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-                <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-                <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    <nav class="navbar navbar-default w3-theme-d2 w3-large">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="Dashboard_MyInner.php" class=" w3-button w3-padding-large " title="Pagina Inicial"><i class="fa fa-home w3-margin-right"></i></a>
             </div>
-        </div>
-        <a href="../Controller/Logout.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Sair"><i class="fa fa-sign-out"></i></a>
-    </div>
-</div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav ">
+                     <li><a href="#" class="w3-center w3-button w3-theme-d4" title="Avaliar"><i class="fa fa-star-o"></i></a></li>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle w3-theme-d4 w3-button " data-toggle="dropdown" title="Notificações"><i class="fa fa-bell "></i><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="w3-center w3-button w3-theme-l5 ">Action</a></li>
+                                <li><a href="#" class="w3-center w3-button w3-theme-l5">Another action</a></li>
+                                <li><a href="#" class="w3-center w3-button w3-theme-l5">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" class="w3-center w3-button ">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Ir ao topo"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle w3-theme-d4 w3-button w3-responsive" data-toggle="dropdown"title="Configurações" ><i class="fa fa-gear"></i><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Update_User_MyInner.php" class="w3-center w3-button" title="Configurações de Conta"><i class="fa fa-user">  Configurações</i></a></li>
+                            <li><a href="#" class="w3-center w3-button "> <i class="fa fa-ticket">  Ticket</i></a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../Controller/Logout.php" class="w3-center w3-button " title="Sair"><i class="fa fa-sign-out">  Sair</i></a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </div>
 
 <!-- Page Container -->

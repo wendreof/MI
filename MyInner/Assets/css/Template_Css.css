@@ -3,7 +3,7 @@
 .w3-theme-l3 {color:#000 !important; background-color:#fff !important}
 .w3-theme-l2 {color:#fff !important; background-color:rgba(40,190,40,.5) !important}
 .w3-theme-l2-star {color:#fff !important; background-color:rgba(40,190,40,.5) !important; text-align: center !important; size: 12pt;;}
-.w3-theme-l2-social {color:#fff !important; background-color:#2e6da4 !important}
+.w3-theme-l2-social {color:#fff !important; background-color:rgba(0,0,255,.9) !important ; padding: 10px;}
 
 .w3-theme-l1 {color:#fff !important; background-color:rgba(40,190,40,.5); !important} /*---> Css Referente ao box de menu esquerdo abaixo dos dados - Box Avaliacao*/
 
