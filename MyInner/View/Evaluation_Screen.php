@@ -1,5 +1,7 @@
-<?php session_start(); /*if ($_SESSION['valid'])*/{
+<?php session_start();
 $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'Honestidade'];
+$date=date_create(isset($_SESSION['DATANASC_USER'])? $_SESSION['DATANASC_USER'] : 'DATA DE NASCIMENTO');
+/*if ($_SESSION['valid'])*/{
     ?>
 <!DOCTYPE html>
     <html>
@@ -67,30 +69,62 @@ $aspectos = [0=>'Etica',1=>'Moral',2=>'Responsabilidade',3=>'Inteligencia',4=>'H
     </div><!-- /.container-fluid -->
 </nav>
 </div>
-
-<div class="w3-card-2 w3-white w3-card-evaluation">
-    <div class="w3-container">
-        <p class="w3-center"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:300px;width:300px" alt="Avatar"></p>
+<section>
+<div class="w3-white w3-card-evaluation">
+    <div style="display: inline-block ; margin-left: 4%;margin-right:-100px;float: left ;width: 30%">
+        <p class="w3-center"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:200px;width:200px" alt="Avatar"></p>
         <h2 class="w3-center"><?php echo isset($_SESSION['NOME_USER'])? $_SESSION['NOME_USER'] : 'NOME'; ?> <?php echo isset($_SESSION['SOBRENOME_USER'])? $_SESSION['SOBRENOME_USER'] : 'SOBRENOME'; ?></h2>
         <hr>
         <?php for ($i=0;$i<5;$i++){ ?>
-        <div class="estrelas" style="width: 9.8% ;display: inline-block ; margin: 80px;padding: 2px">
-            <h4 class="text-center">ÉTICA</h4>
-            <input type="radio" id="cm_star-empty" name="fb" value="" />
-            <label for="cm_star-1"><i class="fa" style="margin-left: -30px"></i></label>
-            <input type="radio" id="cm_star-1" name="fb" value="1" />
-            <label for="cm_star-2"><i class="fa" style="margin-left: -20px"></i></label>
-            <input type="radio" id="cm_star-2" name="fb" value="2"/>
-            <label for="cm_star-3"><i class="fa" style="margin-left: -20px"></i></label>
-            <input type="radio" id="cm_star-3" name="fb" value="3"/>
-            <label for="cm_star-4"><i class="fa" style="margin-left: -20px"></i></label>
-            <input type="radio" id="cm_star-4" name="fb" value="4"/>
-            <label for="cm_star-5"><i class="fa" style="margin-left: -20px"></i></label>
-            <input type="radio" id="cm_star-5" name="fb" value="5" checked/>
-        </div>
+            <div class="estrelas" style="width: 89%; ;margin: auto;">
+                <h4 class="text-center w3-theme-l2-star" style="border-radius: 5px;"><?php echo $aspectos[$i]; ?></h4>
+
+                <input type="radio" id=<?php echo $aspectos[$i]; ?>."-empty" name=<?php echo $aspectos[$i]; ?>."-fb" value="0" checked/>
+                <label for=<?php echo $aspectos[$i]; ?>."-1"><i class="fa" ></i></label>
+                <input type="radio" id=<?php echo $aspectos[$i]; ?>."-1" name=<?php echo $aspectos[$i]; ?>."-fb" value="1" />
+                <label for=<?php echo $aspectos[$i]; ?>."-2"><i class="fa" ></i></label>
+                <input type="radio" id=<?php echo $aspectos[$i]; ?>."-2" name=<?php echo $aspectos[$i]; ?>."-fb" value="2" />
+                <label for=<?php echo $aspectos[$i]; ?>."-3"><i class="fa" ></i></label>
+                <input type="radio" id=<?php echo $aspectos[$i]; ?>."-3" name=<?php echo $aspectos[$i]; ?>."-fb" value="3" />
+                <label for=<?php echo $aspectos[$i]; ?>."-4"><i class="fa""></i></label>
+                <input type="radio" id=<?php echo $aspectos[$i]; ?>."-4" name=<?php echo $aspectos[$i]; ?>."-fb" value="4" />
+                <label for=<?php echo $aspectos[$i]; ?>."-5"><i class="fa" ></i></label>
+                <input type="radio" id=<?php echo $aspectos[$i]; ?>."-5" name=<?php echo $aspectos[$i]; ?>."-fb" value="5" />
+            </div>
         <?php } ?>
     </div>
+
+    <div style="width:60%; display:inline-block; float: right; margin-left: -100px ;">
+           <textarea style="width: 80%"></textarea>
+    </div>
+    </div>
 </div>
+</section>
+<aside>
+<div class="w3-white w3-card-evaluation" style="width:20%; display:inline-block; float: right;margin-right: 10px">
+    <div class="">
+        <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+            <img src="../Assets/img/Wendreo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <span class="w3-right w3-opacity">1 min</span>
+            <h4>John Doe</h4><br>
+            <hr class="w3-clear">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+
+        <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+            <img src="../Assets/img/Pedro.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <span class="w3-right w3-opacity">16 min</span>
+            <h4>Jane Doe</h4><br>
+            <hr class="w3-clear">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+
+
+    </div>
+</div>
+</aside>
 <?php } ?>
 <footer class="w3-container  w3-center w3-margin-top">
 </footer>
