@@ -8,9 +8,8 @@
     $password = mysqli_real_escape_string($conexao,md5($_POST['password_user']));
 
     $sql = "CALL SP_VALIDATE_LOGIN (\"$email_username\",\"$email_username\",\"$password\");";
-
     $login = mysqli_query($conexao, $sql);
-
+    print_r(mysqli_fetch_array($login));
     // Se encontrou o login/senha, loga...
     if (mysqli_num_rows($login) > 0) {
 
@@ -27,6 +26,7 @@
         $_SESSION["valid"]= FALSE;
         $_SESSION['Error_Login']= true;
         header("Location: ../View/index.php");
+
     }
     }else{
         header("Location: ../View/index.php");

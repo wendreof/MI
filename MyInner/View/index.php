@@ -229,7 +229,7 @@ session_start();
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.facebook.com/douglas.junior.948" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/douglas-domenciano-84a04212b" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://twitter.com/douglasdjr" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>

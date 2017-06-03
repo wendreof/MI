@@ -47,6 +47,13 @@
             <div id="foto" class="tab-pane fade">
                 <h4 class="text-center">CONTEUDO RESPONSAVEL POR TROCAR DE IMAGEN DE PERFIL  </h4>
 
+                <!-- Formulario para inserir a img  -->
+                <form action="../Controller/UpLoadImage.php" method="post" enctype="multipart/form-data">
+                    <label for="img"> Insira sua foto: <input type="file" id="img" name="img"></label>
+                    <br><button type="submit" class="btn btn-success">Salvar</button>
+
+                </form>
+
             </div>
             <div id="deletar" class="tab-pane fade">
 
