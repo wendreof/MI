@@ -83,7 +83,7 @@ if ($_SESSION['valid']){
             <div class="w3-card-2 w3-round w3-white">
                 <div class="w3-container">
 
-                    <p class="w3-center"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <p class="w3-center"><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                     <hr>
                     <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['NOME_USER'])? $_SESSION['NOME_USER'] : 'NOME'; ?>,<?php echo isset($_SESSION['SOBRENOME_USER'])? $_SESSION['SOBRENOME_USER'] : 'SOBRENOME'; ?></p>
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['CIDADE_USER'])? $_SESSION['CIDADE_USER'] : 'CIDADE'; ?>, <?php echo isset($_SESSION['PAIS_USER'])? $_SESSION['PAIS_USER'] : 'PAIS'; ?></p>
@@ -113,7 +113,7 @@ if ($_SESSION['valid']){
                             <label for=<?php echo $aspectos[$i]; ?>."-4"><i class="fa"></i></label>
                             <input type="radio" id=<?php echo $aspectos[$i]; ?>."-4" name=<?php echo $aspectos[$i]; ?>."-fb" value="4" />
                             <label for=<?php echo $aspectos[$i]; ?>."-5"><i class="fa"></i></label>
-                            <input type="radio" id=<?php echo $aspectos[$i]; ?>."-5" name=<?php echo $aspectos[$i]; ?>."-fb" value="5" />
+                            <input type="radio" id=<?php echo $aspectos[$i]; ?>."-5" name=<?php echo $aspectos[$i]; ?>."-fb" value="5" checked />
                         </div>
 
                         <?php } ?>

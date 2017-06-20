@@ -42,5 +42,6 @@ else{
 }
 
 echo "executou todas as operações visualize no pasta img";
+header("Location: ../View/Dashboard_MyInner.php")
 
 ?>
