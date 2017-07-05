@@ -37,11 +37,11 @@ session_start();
 <body>
     <!-- Navigation -->
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="toggle"><input type="button" class="btn btn-success" value="Menu"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -65,7 +65,7 @@ session_start();
                                     <div class="modal-body container-fluid">
                                         Pode ficar tranquilo todos seus dados pessoais de extrema importancia será guardado com maxima segurança, nosso sistema fara sempre o
                                         maximo para assegurar seus dados confie em nós. E aproveite o novo mundo de chances para mostrar a todos quem você é. Vamos lá!
-                                        <form action="../Controller/Register.php" method="post"  name="formlogin">
+                                        <form action="../Controller/Register.php" method="post"  name="formRegistro">
                                            <div class="form-signup-login">
                                                     <h3 class="text-center">Dados de Login</h3>
                                                     <br><input type="text" class="input_css" name="user_name" style="width: 50%;" maxlength="10"  required placeholder="USER NAME" >

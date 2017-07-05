@@ -213,6 +213,5 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .estrelas input[type=radio] {display: none;}
 .estrelas label i.fa:before {content:'\f005';color: #FC0; font-size: 30px;padding-right: 3px;padding-left: 20px;}
 .estrelas input[type=radio]:checked ~ label i.fa:before {color: #CCC;}
-.w3-card-evaluation{float: left;  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); padding-top: 9px;margin-top: 50px;margin-bottom: 50px;margin-left: 10px; width: 75%;height: auto;}
-
+.w3-card-evaluation{float: left;  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); padding-top: 9px;margin-top: 50px;margin-bottom: 50px;margin-left: 20.2%;margin-right: -11%; width: 40%;height: auto;}
 
