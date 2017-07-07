@@ -23,55 +23,44 @@ if ($_SESSION['valid']){
 <body class="w3-theme-l5">
 
 <!-- Navbar -->
-<div class="w3-top">
-    <nav class="navbar navbar-default w3-theme-d2 w3-large">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="Dashboard_MyInner.php" class=" w3-button w3-padding-large " title="Pagina Inicial"><i class="fa fa-home w3-margin-right"></i></a>
-            </div>
+    <div class="w3-top">
+        <nav class="navbar navbar-fixed-top w3-theme-d1">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav ">
-                     <li><a href="Evaluation_Screen.php" class="w3-center w3-button w3-theme-d4" title="Avaliar"><i class="fa fa-star-o"></i></a></li>
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle w3-theme-d4 w3-button " data-toggle="dropdown" title="Notificações"><i class="fa fa-bell "></i><span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" class="w3-center w3-button w3-theme-l5 ">Action</a></li>
-                                <li><a href="#" class="w3-center w3-button w3-theme-l5">Another action</a></li>
-                                <li><a href="#" class="w3-center w3-button w3-theme-l5">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#" class="w3-center w3-button ">Separated link</a></li>
-                            </ul>
-                        </li>
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="Dashboard_MyInner.php" class=" w3-button w3-padding-large " title="Pagina Inicial"><i class="fa fa-2x fa-home w3-margin-right"></i></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="Evaluation_Screen.php" class="w3-button w3-padding-large " title="Avaliar"><i class="fa fa-2x fa-balance-scale"></i></a></li>
+                        <li><a href="#" class="w3-button w3-padding-large " title="Minhas Avaliações"><i class="fa fa-2x fa-star-o"></i><span class="badge">42</span></a></li>
                     </ul>
-                </ul>
+                    <ul class="nav navbar-nav navbar-right">
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Ir ao topo"><img src="../Assets/img/Douglas.jpg" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle w3-theme-d4 w3-button w3-responsive" data-toggle="dropdown"title="Configurações" ><i class="fa fa-gear"></i><span class="caret"></span></a>
+                        <li class="dropdown">
+                        <li href="#" class="dropdown-toggle w3-button w3-padding-large" data-toggle="dropdown"title="Configurações" ><i class="fa fa-2x fa-gear"></i><span class="caret"></span></li>
                         <ul class="dropdown-menu">
                             <li><a href="Update_User_MyInner.php" class="w3-center w3-button" title="Configurações de Conta"><i class="fa fa-user">  Configurações</i></a></li>
                             <li><a href="#" class="w3-center w3-button "> <i class="fa fa-ticket">  Ticket</i></a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="../Controller/Logout.php" class="w3-center w3-button " title="Sair"><i class="fa fa-sign-out">  Sair</i></a></li>
-
                         </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-</div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+
+        </nav>
+    </div>
 
 <!-- Page Container -->
 <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
@@ -81,19 +70,22 @@ if ($_SESSION['valid']){
         <div class="w3-col m3">
             <!-- Profile -->
             <div class="w3-card-2 w3-round w3-white">
-                <div class="w3-container">
 
+                <div class="w3-container">
+                    <hr>
                     <p class="w3-center"><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                     <hr>
                     <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['NOME_USER'])? $_SESSION['NOME_USER'] : 'NOME'; ?>,<?php echo isset($_SESSION['SOBRENOME_USER'])? $_SESSION['SOBRENOME_USER'] : 'SOBRENOME'; ?></p>
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['CIDADE_USER'])? $_SESSION['CIDADE_USER'] : 'CIDADE'; ?>, <?php echo isset($_SESSION['PAIS_USER'])? $_SESSION['PAIS_USER'] : 'PAIS'; ?></p>
                     <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> <?php echo date_format($date, 'd F Y'); ?></p>
+                    <hr>
                 </div>
             </div>
             <br>
 
             <!-- Accordion -->
             <div class="w3-card-2 w3-round">
+                <hr>
                 <div class="w3-white">
                     <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heartbeat fa-fw w3-margin-right"></i> Minhas Avaliações</button>
                     <div id="Demo1" class="w3-hide w3-container">
@@ -149,18 +141,19 @@ if ($_SESSION['valid']){
                         </div>
                     </div> <!-- Demo3 -->
                 </div>
+                <hr>
             </div>
             <br>
 
             <!-- Interests -->
             <div class="w3-card-2 w3-round w3-white w3-hide-small">
                 <div class="w3-container">
+                    <hr>
                     <p>Citação favorita</p>
                     <p>
-
                         <span class="w3-tag w3-small w3-theme-l3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-
                     </p>
+                    <hr>
                 </div>
             </div>
             <br>

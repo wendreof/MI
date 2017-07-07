@@ -25,25 +25,33 @@ include ("header.php");?>
                 <h4>John Doe</h4><br>
                 <hr class="w3-clear">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button type="button" class="w3-button-shape w3-theme-l2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+                <button class="w3-button-shape w3-theme-l2 w3-margin-bottom" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa fa-comment"></i>Comment
+                </button>
+                <div class="collapse" id="collapseExample">
+                    <div class="well">
+                      Aqui ficara um form com um text area e um btn enviar !
+                    </div>
+                </div>
             </div>
+            <!-- COPIAS PARA TESTE DE EXECUÇÃO-->
+
+
 
             <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-                <img src="../Assets/img/Pedro.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                <span class="w3-right w3-opacity">16 min</span>
-                <h4>Jane Doe</h4><br>
+                <img src="../Assets/img/Wendreo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <span class="w3-right w3-opacity">1 min</span>
+                <h4>John Doe</h4><br>
                 <hr class="w3-clear">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button type="button" class="w3-button-shape w3-theme-l2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
-            </div>
-
-            <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-                <img src="../Assets/img/Marcus.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                <span class="w3-right w3-opacity">16 min</span>
-                <h4>Jane Doe</h4><br>
-                <hr class="w3-clear">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button type="button" class="w3-button-shape w3-theme-l2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+                <button class="w3-button-shape w3-theme-l2 w3-margin-bottom" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa fa-comment"></i>Comment
+                </button>
+                <div class="collapse" id="collapseExample1">
+                    <div class="well">
+                        Aqui ficara um form com um text area e um btn enviar !
+                    </div>
+                </div>
             </div>
             <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
                 <img src="../Assets/img/Wendreo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
@@ -51,26 +59,19 @@ include ("header.php");?>
                 <h4>John Doe</h4><br>
                 <hr class="w3-clear">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button type="button" class="w3-button-shape w3-theme-l2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+                <button class="w3-button-shape w3-theme-l2 w3-margin-bottom" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa fa-comment"></i>Comment
+                </button>
+                <div class="collapse" id="collapseExample2">
+                    <div class="well">
+                        Aqui ficara um form com um text area e um btn enviar !
+                    </div>
+                </div>
             </div>
 
-            <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-                <img src="../Assets/img/Pedro.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                <span class="w3-right w3-opacity">16 min</span>
-                <h4>Jane Doe</h4><br>
-                <hr class="w3-clear">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button type="button" class="w3-button-shape w3-theme-l2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
-            </div>
 
-            <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-                <img src="../Assets/img/Marcus.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                <span class="w3-right w3-opacity">16 min</span>
-                <h4>Jane Doe</h4><br>
-                <hr class="w3-clear">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button type="button" class="w3-button-shape w3-theme-l2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
-            </div>
+
+
 
             <!-- End Middle Column -->
         </div>

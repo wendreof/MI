@@ -41,7 +41,7 @@ session_start();
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="toggle"><input type="button" class="btn btn-success" value="Menu"></span>
+                        <span class="toggle"><input type="button" class="btn btn-success" value="Menu"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -120,13 +120,18 @@ session_start();
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
         <?php if (isset($_SESSION['RegError'])) { ?>
-            <div style="margin:0;" class="alert alert-danger text-center" role="alert"><b>Erro:</b> <?php echo $_SESSION['RegError'];?> já existe. Por favor caso tenha esquecido seus dados de
+            <div style="margin:0;" class="alert alert-danger text-center alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <b>Erro:</b> <?php echo $_SESSION['RegError'];?> já existe. Por favor caso tenha esquecido seus dados de
                 login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
         <?php } unset($_SESSION['RegError']);?>
 
         <?php if (isset($_SESSION['Error_Login'])) { ?>
-            <div style="margin:0;" class="alert alert-danger text-center" role="alert"><b>Erro:</b> Login incorreto,tente novamente. Por favor caso tenha esquecido seus dados de
+            <div style="margin:0;" class="alert alert-danger text-center alert-dismissible " role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <b>Erro:</b> Login incorreto,tente novamente. Por favor caso tenha esquecido seus dados de
                 login abra um ticket e enviaremos seus dados via Email, previamente cadastrado.Agradecemos a compreenssão.</div>
+
         <?php } unset($_SESSION['Error_Login']);?>
 
         <?php if (isset($_SESSION['RegisterOk'])) { ?>
@@ -239,7 +244,7 @@ session_start();
                         <h4>Wendreo Fernandes</h4>
                         <p class="text-muted">Co-Founder and CTO</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/wendreo.fernandes" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/wendreo.fernandes" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/wendreo-luciano-fernandes-04b887106/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="https://twitter.com/wendreofoficial" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         </ul>

@@ -7,7 +7,7 @@
 
 .w3-theme-l1 {color:#fff !important; background-color:rgba(40,190,40,.5); !important} /*---> Css Referente ao box de menu esquerdo abaixo dos dados - Box Avaliacao*/
 
-.w3-theme-d1 {color:#fff !important; background-color:rgba(40,190,40,.5) !important}
+.w3-theme-d1 {color:#000 !important; background-color:rgba(40,190,40,.5) !important; }
 
 .w3-theme-d2 {color:#fff !important; background-color:#2b542c !important} /*----> Barra Superior menu*/
 

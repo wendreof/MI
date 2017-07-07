@@ -3,11 +3,13 @@
 <div class="w3-col m2">
     <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
+            <hr>
             <p>Seus Amigos...</p>
             <img src="../Assets/img/1.jpg" style="width:100%;margin-bottom: auto">
             <p><strong>Nome do Amigo</strong></p>
             <p>Avalie tambem e contribua.(gerar um randon)</p>
             <p><button class="w3-button-shape w3-block w3-theme-l2 fa fa-star-o">&nbsp;&nbsp;Avaliar</button></p>
+            <hr>
         </div>
     </div>
     <br>
@@ -15,8 +17,8 @@
     <div class="w3-card-2 w3-round w3-white w3-center">
 
             <div class="w3-container">
+                <hr>
                 <p>Media</p>
-
                 <div class="estrelas">
                     <input type="radio" id="cm_star-empty" name="fb" value="" />
                     <label for="cm_star-1"><i class="fa" style="margin-left: -30px"></i></label>
@@ -33,10 +35,12 @@
 
                 <p><strong>Uma frase sobre sua nota</strong></p>
                 <p>Que tal mostrar a todos seus amigos ?<br> Compartilhe.</p>
-                <p><button type="button" class="w3-circle   w3-theme-l2-social fa fa-facebook-official fa-2x" ></button>
-                    <button type="button" class="w3-circle  w3-theme-l2-social fa fa-instagram fa-2x" ></button>
-                    <button type="button" class="w3-circle  w3-theme-l2-social fa fa-twitter fa-2x" ></button>
+                <p>
+               <a href="https://www.facebook.com/wendreo.fernandes" target="_blank"><i class="fa fa-facebook-official fa-3x"></i></a>
+                    <a href="https://www.facebook.com/wendreo.fernandes" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+                    <a href="https://www.facebook.com/wendreo.fernandes" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
                 </p>
+                <hr>
             </div>
 
     </div>
@@ -45,7 +49,7 @@
 
     <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center" style="max-height: 240px">
         <p><i class="fa fa-bug w3-xxlarge"></i></p>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- MyInner-AD -->
         <ins class="adsbygoogle"
              style="display:block"
@@ -58,13 +62,15 @@
     </div>
 <br>
     <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
+        <hr>
         <p>Siga-nos em nossas paginas nas redes sociais.</p>
         <i class="fa fa-facebook-official fa-2x w3-hover-opacity"></i>
-        <i class="fa fa-instagram fa-2x w3-hover-opacity"></i>
+        <i class="fa fa-instagram fa-2x "></i>
         <i class="fa fa-snapchat  fa-2x w3-hover-opacity"></i>
         <i class="fa fa-twitter fa-2x w3-hover-opacity"></i>
         <i class="fa fa-linkedin  fa-2x w3-hover-opacity"></i>
         <br><p>Copyright &copy; -  MyInner 2017</p>
+        <hr>
     </div>
 
     <!-- End Right Column -->
