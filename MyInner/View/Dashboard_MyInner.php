@@ -1,6 +1,7 @@
 <?php session_start();
 
-include ("header.php");?>
+include("Header.php");
+include("Menu_Left.php");?>
 
         <!-- Middle Column -->
         <div class="w3-col m7">
@@ -26,7 +27,7 @@ include ("header.php");?>
                 <hr class="w3-clear">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <button class="w3-button-shape w3-theme-l2 w3-margin-bottom" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <i class="fa fa-comment"></i>Comment
+                    <i class="fa fa-comment"></i> Comment
                 </button>
                 <div class="collapse" id="collapseExample">
                     <div class="well">
@@ -76,6 +77,6 @@ include ("header.php");?>
             <!-- End Middle Column -->
         </div>
 
-<?php  include ("footer.php");?>
+<?php  include("Menu_Right.php");?>
 
 

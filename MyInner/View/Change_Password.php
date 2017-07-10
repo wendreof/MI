@@ -38,7 +38,7 @@
     </div>
     <div class="form-group" style="margin-left: 13%">
         <div class="col-sm-offset-2 col-sm-10">
-            <input type="submit" class="btn btn-success" value="Alterar">
+            <input type="submit" class="btn w3-theme-l2" value="Alterar">
 
             <a href="./index.php"><button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Lembrou ? então corra e faça apenas o login ! :D">Lembrei minha senha !</button></a>
 

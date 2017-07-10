@@ -7,7 +7,7 @@ session_start();
     $HONESTIDADE_VALUE ="Honestidade é a palavra que indica a qualidade de ser verdadeiro: não mentir, não fraudar, não enganar.Quanto à etimologia, a palavra honestidade tem origem no latim honos, que remete para dignidade e honra.";
     $INTELIGENCIA_VALUE="Inteligência é um conjunto que forma todas as características intelectuais de um indivíduo, ou seja, a faculdade de conhecer, compreender, raciocinar, pensar e interpretar. A inteligência é uma das principais distinções entre o ser humano e os outros animais. ";
     $RESPONSABILIDADE_VALUE="Responsável é o adjetivo que qualifica algo ou alguém que é capaz de responder pelos seus próprios atos ou pelas ações de outras pessoas, ou seja, que assume a responsabilidade";
-    include "../Model/States.php";
+    include "../Model/Country.php";
 ?>
 
 <!DOCTYPE html>
@@ -70,29 +70,21 @@ session_start();
                                                     <h3 class="text-center">Dados de Login</h3>
                                                     <br><input type="text" class="input_css" name="user_name" style="width: 50%;" maxlength="10"  required placeholder="USER NAME" >
                                                     <input type="password" style="width: 47%" class="input_css" name="password_user" maxlength="8"  required placeholder="PASSWORD"><br><!-- Criar um Evento JS para verificar disponibilidade e colocar btn sucesso caso disponivel e btn danger caso não <a class="btn btn-info" href="#">Ver</a> -->
-                                                    <input type="text" class="input_css" name="email_user" style="width: 98%;" maxlength="255"  required placeholder="EMAIL"><br>
+                                                    <input type="text" class="input_css" name="email_user" style="width: 98.4%;" maxlength="255"  required placeholder="EMAIL"><br>
                                                     <hr>
                                                     <h3 class="text-center  ">Dados de Usuario</h3>
                                                     <div class="form-group">
                                                             <input type="text" class="input_css" name="name_user" id="txt_name" style="width: 50%;" maxlength="15" required placeholder="NOME ">
                                                             <input type="text" class="input_css" name="sobrenome_user" id="sobrenome" style="width: 47%;" maxlength="15"  required placeholder="SOBRENOME">
-                                                            <legend class="text-center">SEXO :
-                                                                    <input type="radio" id="input_css" name="sexo_user"  value="M" checked/><label for="input_css">Masculino</label>
-                                                                    <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
-                                                            </legend>
-                                                            <input type="text" class="input_css date" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
-                                                            <input type="text" id="cpf_user" class="input_css cpf" name="cpf_user"  style="width: 57%;"   placeholder="CPF">
-                                                            <input type="text" class="input_css" name="endereco_user"  style="width: 57%;" maxlength="255"   placeholder="ENDERECO">
-                                                            <input type="text" class="input_css" name="cidade_user"  style="width: 40%;"   placeholder="CIDADE">
 
-                                                            <select name="estado_user" id="estado" style="min-width: 47%" >
-                                                                <?php for ($i=0;$i<=count($estados);$i++){ require_once "../Model/States.php"; $estados = setStates();?>
-                                                                <option value=<?php echo $estados [$i];?>><?php echo $estados[$i];?></option>
-                                                                <?php } ?>
-                                                                </optgroup>
-
-                                                            </select><input type="text" class="input_css" name="pais_user"   style="width: 50%;" placeholder="PAIS"><br>
-                                                            <p class="text-center"><input type="checkbox" name="terms_acept"  value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
+                                                            <input type="text" id="cpf_user" class="input_css cpf" name="cpf_user"  style="width: 98%;"   placeholder="CPF">
+                                                                <input type="text" class="input_css date" name="datanasc_user"  style="width: 40%;" maxlength="8"  placeholder="DATA NASCIMENTO" required>
+                                                            <input type="text" class="input_css" name="pais_user"   style="width: 56.4%;" placeholder="PAIS"><br>
+                                                        <legend class="text-center">SEXO :
+                                                            <input type="radio" id="input_css" name="sexo_user"  value="M" checked/><label for="input_css">Masculino</label>
+                                                            <input type="radio" id="input_css" name="sexo_user" value="F"/><label for="input_css">Feminino</label>
+                                                        </legend>
+                                                        <p class="text-center"><input type="checkbox" name="terms_acept"  value="1" checked> Li e Concordo com os <a href="#">Termos de Uso</a> e <a href="#"> Política de Privacidade</a>.</p>
                                                     </div>
                                            </div>
                                             <div class="modal-footer">
