@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../Assets/css/Core.css"/>
     <link rel="script" href="../Assets/js/bootstrap.js">
 </head>
-<body class="w3-theme-d1">
+<body background="../Assets/img/backgroundChange.jpg">
+
 <div class="w3-card-change w3-theme-l5">
 <form class="form-horizontal">
     <h4 class="text-center">PRO FAVOR DIGITE A NOVA SENHA PARA EFETUARMOS A TROCA. </h4>

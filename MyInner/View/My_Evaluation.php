@@ -33,8 +33,6 @@ include ("Header.php");?>
 <?php } ?>
 <footer class="w3-container  w3-center w3-margin-top">
 </footer>
-</body>
-</html>
 <script>
 
     function checkstar(value) {

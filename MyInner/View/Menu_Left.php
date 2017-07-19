@@ -4,11 +4,11 @@
         <!-- Left Column -->
         <div class="w3-col m3">
             <!-- Profile -->
-            <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-card-4 w3-round w3-white">
 
                 <div class="w3-container">
                     <hr>
-                    <p class="w3-center"><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-circle" style="height:150px;width:150px" alt="Avatar"></p>
+                    <p class="w3-center"><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-round-large" style="height: 290px;width:95%" alt="Avatar"></p>
                     <hr>
                     <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['NOME_USER'])? $_SESSION['NOME_USER'] : 'NOME'; ?>,<?php echo isset($_SESSION['SOBRENOME_USER'])? $_SESSION['SOBRENOME_USER'] : 'SOBRENOME'; ?></p>
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['CIDADE_USER'])? $_SESSION['CIDADE_USER'] : 'CIDADE'; ?>, <?php echo isset($_SESSION['PAIS_USER'])? $_SESSION['PAIS_USER'] : 'PAIS'; ?></p>
@@ -16,6 +16,7 @@
 
                 </div>
                 <hr>
+                <!-- Accordion -->
                 <div class="w3-white">
                     <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heartbeat fa-fw w3-margin-right"></i> Minhas Avaliações</button>
                     <div id="Demo1" class="w3-hide w3-container">
@@ -80,29 +81,22 @@
                             <span class="w3-tag w3-small w3-theme-l3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.askfjslkdfjsljdflsdjflkj</span>
                         </p>
                         <hr>
+                        <div class="w3-container w3-display-container w3-round-large w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+                     <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+                         <i class="fa fa-remove"></i>
+                     </span>
+                            <p><strong>Hey!</strong></p>
+                            <p>People are looking at your profile. Find out who.</p>
+                        </div>
+                        <!-- Alert Box -->
                     </div>
 
+
             </div>
             <br>
-
-            <!-- Accordion -->
-
-
-
             <br>
 
-            <!-- Interests -->
-
             <br>
-
-            <!-- Alert Box -->
-            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
-          <i class="fa fa-remove"></i>
-        </span>
-                <p><strong>Hey!</strong></p>
-                <p>People are looking at your profile. Find out who.</p>
-            </div>
 
             <!-- End Left Column -->
         </div>

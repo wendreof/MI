@@ -49,7 +49,7 @@ if ($_SESSION['valid']){
                         <li class="dropdown">
                         <li href="#" class="dropdown-toggle w3-button w3-padding-large" data-toggle="dropdown"title="Configurações" ><i class="fa fa-2x fa-gear"></i><span class="caret"></span></li>
                         <ul class="dropdown-menu">
-                            <li><a href="Update_User_MyInner.php" class="w3-center w3-button" title="Configurações de Conta"><i class="fa fa-user">  Configurações</i></a></li>
+                            <li><a href="#" class="w3-center w3-button" title="Configurações de Conta" data-toggle="modal" data-target="#myModal"><i class="fa fa-user">  Configurações</i></a></li>
                             <li><a href="Ticket.php" class="w3-center w3-button "> <i class="fa fa-ticket">  Ticket</i></a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="../Controller/Logout.php" class="w3-center w3-button " title="Sair"><i class="fa fa-sign-out">  Sair</i></a></li>

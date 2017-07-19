@@ -9,7 +9,7 @@ include("Menu_Left.php");?>
            <!-- <form> enciar dados da busca para uma page buscar -->
                 <div class="w3-row-padding">
                 <div class="w3-col m12">
-                    <div class="w3-card-2 w3-round w3-white">
+                    <div class="w3-card-4 w3-round w3-white">
                         <div class="w3-container w3-padding">
                             <h6 class="w3-opacity">Procurar pessoas...</h6>
                             <input type="text" name="search" placeholder="Procure por nome, E-mail ..." style="width: 80%" contenteditable="true" class="w3-border w3-padding" /><br>
@@ -20,7 +20,7 @@ include("Menu_Left.php");?>
             </div>
             <!-- </form>  -->
 
-            <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+            <div class="w3-container w3-card-4 w3-white w3-round w3-margin"><br>
                 <img src="../Assets/img/Wendreo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
                 <span class="w3-right w3-opacity">1 min</span>
                 <h4>John Doe</h4><br>
@@ -39,7 +39,7 @@ include("Menu_Left.php");?>
 
 
 
-            <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+            <div class="w3-container w3-card-4 w3-white w3-round w3-margin"><br>
                 <img src="../Assets/img/Wendreo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
                 <span class="w3-right w3-opacity">1 min</span>
                 <h4>John Doe</h4><br>
@@ -54,7 +54,7 @@ include("Menu_Left.php");?>
                     </div>
                 </div>
             </div>
-            <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+            <div class="w3-container w3-card-4 w3-white w3-round w3-margin"><br>
                 <img src="../Assets/img/Wendreo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
                 <span class="w3-right w3-opacity">1 min</span>
                 <h4>John Doe</h4><br>
