@@ -8,18 +8,13 @@
 
                 <div class="w3-container">
                     <hr>
-                    <p class="w3-center"><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <p class="w3-center"><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-circle" style="height:150px;width:150px" alt="Avatar"></p>
                     <hr>
                     <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['NOME_USER'])? $_SESSION['NOME_USER'] : 'NOME'; ?>,<?php echo isset($_SESSION['SOBRENOME_USER'])? $_SESSION['SOBRENOME_USER'] : 'SOBRENOME'; ?></p>
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['CIDADE_USER'])? $_SESSION['CIDADE_USER'] : 'CIDADE'; ?>, <?php echo isset($_SESSION['PAIS_USER'])? $_SESSION['PAIS_USER'] : 'PAIS'; ?></p>
                     <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> <?php echo date_format($date, 'd F Y'); ?></p>
-                    <hr>
-                </div>
-            </div>
-            <br>
 
-            <!-- Accordion -->
-            <div class="w3-card-2 w3-round">
+                </div>
                 <hr>
                 <div class="w3-white">
                     <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heartbeat fa-fw w3-margin-right"></i> Minhas Avaliações</button>
@@ -77,20 +72,27 @@
                     </div> <!-- Demo3 -->
                 </div>
                 <hr>
+
+                    <div class="w3-container">
+
+                        <p>Citação favorita</p>
+                        <p>
+                            <span class="w3-tag w3-small w3-theme-l3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.askfjslkdfjsljdflsdjflkj</span>
+                        </p>
+                        <hr>
+                    </div>
+
             </div>
             <br>
 
+            <!-- Accordion -->
+
+
+
+            <br>
+
             <!-- Interests -->
-            <div class="w3-card-2 w3-round w3-white w3-hide-small">
-                <div class="w3-container">
-                    <hr>
-                    <p>Citação favorita</p>
-                    <p>
-                        <span class="w3-tag w3-small w3-theme-l3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                    </p>
-                    <hr>
-                </div>
-            </div>
+
             <br>
 
             <!-- Alert Box -->
