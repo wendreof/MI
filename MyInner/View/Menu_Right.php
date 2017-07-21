@@ -7,7 +7,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h4 class="modal-title" id="myModalLabel">Configurações de Conta</h4>
             </div>
             <div class="modal-body">
                 <div >
@@ -25,19 +25,19 @@
                                     <input type="hidden" name="id_user" style="min-width: 50%" value="<?php echo $_SESSION['ID_USER']; ?>" >
                                     <span class="input-group-addon w3-theme-l2" id="basic-addon1"><i  class="fa fa-user fa-5x "></i></span>
                                     <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-pencil"></i></span>
+                                        <span class="input-group-addon w3-theme-l2" id="basic-addon1"><i class="fa fa-pencil"></i></span>
                                         <input type="text" class="form-control" data-toggle="tooltip" data-placement="left" title="Nome" style="width: 100%" value="<?php echo $_SESSION['NOME_USER']; ?>"name="name_user" id="txt_name" maxlength="15"  required placeholder="NOME ">
                                     </div>
                                     <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-pencil"></i></span>
+                                        <span class="input-group-addon w3-theme-l2" id="basic-addon1"><i class="fa fa-pencil"></i></span>
                                         <input type="text" class="form-control" data-toggle="tooltip" data-placement="left" title="Sobrenome" style="width: 100%" value="<?php echo $_SESSION['SOBRENOME_USER']; ?>"name="sobrenome_user" id="sobrenome" maxlength="15"  required placeholder="SOBRENOME">
                                     </div>
                                     <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-home"></i></span>
+                                        <span class="input-group-addon w3-theme-l2" id="basic-addon1"><i class="fa fa-home"></i></span>
                                         <input type="text" class="form-control" data-toggle="tooltip" data-placement="left" title="Pais" style="width: 100%" value="<?php echo $_SESSION['PAIS_USER']; ?>"name="pais_user" id="txt_name"   placeholder="PAIS" required>
                                     </div>
                                     <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-birthday-cake"></i></span>
+                                        <span class="input-group-addon w3-theme-l2" id="basic-addon1"><i class="fa fa-birthday-cake"></i></span>
                                         <input type="date" class="form-control" data-toggle="tooltip" data-placement="left" title="Data de Nascimento" style="width: 100%" value="<?php echo date('d-m-Y', strtotime($_SESSION['DATANASC_USER'])) ?>"name="datanasc_user" id="txt_datanasc" maxlength="10"  placeholder="DATA NASCIMENTO" required>
                                     </div>
 
@@ -47,7 +47,7 @@
                         <div id="foto" class="tab-pane fade">
                             <!-- Formulario para inserir a img  -->
                             <form action="../Controller/UpLoadImage.php" method="post" enctype="multipart/form-data">
-                                <br><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-round-large" style="height: 290px;width:50%" alt="Avatar">
+                                <br><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-round-large" style="height: 290px;width:50%" alt="Avatar" id="preview"><br>
                                 <br><label for="img"> Insira sua foto: <input type="file" id="img" name="img"></label>
                                 <br><button type="submit" class="btn w3-theme-l2">Salvar</button>
                             </form>
@@ -56,13 +56,13 @@
                             <br>
                             <form action="" method="post" name="formStatus">
                                     <input type="hidden" name="id_user" style="min-width: 50%" value="<?php echo $_SESSION['ID_USER']; ?>" >
-                                    <span class="input-group-addon w3-theme-l2" id="basic-addon1"><i  class="fa fa-at fa-3x"></i></span>
+                                    <span class="input-group-addon w3-theme-l2" id="basic-addon1"><i  class="fa fa-sign-in fa-3x"></i></span>
                                     <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-pencil"></i></span>
+                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" data-toggle="tooltip" data-placement="left" title="Nome" style="min-width: 52%" value="<?php echo $_SESSION['NOME_USER']; ?>"name="name_user" id="txt_name" maxlength="15"  required placeholder="NOME ">
                                     </div>
                                     <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-pencil"></i></span>
+                                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-at"></i></span>
                                         <input type="text" class="form-control" data-toggle="tooltip" data-placement="left" title="Sobrenome" style="min-width: 45%" value="<?php echo $_SESSION['SOBRENOME_USER']; ?>"name="sobrenome_user" id="sobrenome" maxlength="15"  required placeholder="SOBRENOME">
                                     </div>
 
@@ -164,7 +164,7 @@
     </html>
 
 
-    <script>
+    <script type="text/javascript">
 
         function checkstar(value) {
             var btn = document.getElementById("cm_star-"+value);
@@ -191,6 +191,41 @@
             } else {
                 x.className = x.className.replace(" w3-show", "");
             }
-        }
-    </script>
 
+        }
+
+
+        // Function js for show icon camera
+        function ShowUpdatePhotoOpen() {
+
+            document.getElementById('timelineShade').style.display = 'block';
+            $(document).ready(function() {
+                $("#timelineShade").fadeTo( 2000 , 0.5);
+            });
+
+        }
+
+        function ShowUpdatePhotoClose() {
+
+            document.getElementById('timelineShade').style.display = 'none';
+            $(document).ready(function() {
+                $("#timelineShade").fadeTo( 2000 , 0);
+
+            });
+
+        }
+
+
+
+    </script>
+        <script type="text/javascript">
+            $("#img").on('change', function(){
+                if (this.files && this.files[0]){
+                    var reader = new FileReader();
+                    reader.onload = function(e){
+                        $('#preview').attr("src", e.target.result).fadeIn();
+                    }
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+        </script>

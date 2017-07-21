@@ -8,7 +8,31 @@
 
                 <div class="w3-container">
                     <hr>
-                    <p class="w3-center"><img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="w3-round-large" style="height: 290px;width:95%" alt="Avatar"></p>
+                    <div id="container">
+
+                        <div id="timelineContainer" onmouseover="ShowUpdatePhotoOpen();" onmouseleave="ShowUpdatePhotoClose();">
+                            <!-- timeline background -->
+                            <div id="timelineBackground">
+                                <img src="../Assets/img/backgroundChange.jpg" class="bgImage" style="width: 100%;height: 100%">
+                            </div>
+
+                            <!-- timeline background -->
+                            <div id="timelineShade" style="display: none">
+                                <form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_background.php">
+                                    <div class="uploadFile timelineUploadBG">
+                                        <a name="photoimg" id="bgphotoimg" class="custom-file-input" href="#" data-toggle="modal" data-target="#myModal"></a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- timeline profile picture -->
+                            <div id="timelineProfilePic">
+                                <img src="../Assets/img/Wendreo.jpg" class="bgImage" style="width: 100%;height: 100%">
+                            </div>
+
+                        </div>
+                    </div>
+
                     <hr>
                     <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['NOME_USER'])? $_SESSION['NOME_USER'] : 'NOME'; ?>,<?php echo isset($_SESSION['SOBRENOME_USER'])? $_SESSION['SOBRENOME_USER'] : 'SOBRENOME'; ?></p>
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo isset($_SESSION['CIDADE_USER'])? $_SESSION['CIDADE_USER'] : 'CIDADE'; ?>, <?php echo isset($_SESSION['PAIS_USER'])? $_SESSION['PAIS_USER'] : 'PAIS'; ?></p>
