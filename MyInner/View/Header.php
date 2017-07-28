@@ -31,7 +31,7 @@ if ($_SESSION['valid']){
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"><i class="fa fa-bars"></i></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -49,8 +49,13 @@ if ($_SESSION['valid']){
                         <li class="dropdown">
                         <li href="#" class="dropdown-toggle w3-button w3-padding-large" data-toggle="dropdown"title="Configurações" ><i class="fa fa-2x fa-gear"></i><span class="caret"></span></li>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="w3-center w3-button" title="Configurações de Conta" data-toggle="modal" data-target="#myModal"><i class="fa fa-user">  Configurações</i></a></li>
-                            <li><a href="Ticket.php" class="w3-center w3-button "> <i class="fa fa-ticket">  Ticket</i></a></li>
+                            <li><a class="w3-center w3-button" data-toggle="modal" data-target=".ModalDadosPessoais"><i class="fa fa-user-o">  Dados Pessoais</i></a></li>
+                            <li><a class="w3-center w3-button" data-toggle="modal" data-target=".ModalDadosdeLogin"><i class="fa fa-at">  Dados de Login</i></a></li>
+                            <li><a class="w3-center w3-button" data-toggle="modal" data-target=".ModalEncerrarConta"><i class="fa fa-trash-o">  Encerrar Conta</i></a></li>
+                            <li><a class="w3-center w3-button" data-toggle="modal" data-target=".ModalTicket"><i class="fa fa-ticket">  Ticket</i></a></li>
+
+
+
                             <li role="separator" class="divider"></li>
                             <li><a href="../Controller/Logout.php" class="w3-center w3-button " title="Sair"><i class="fa fa-sign-out">  Sair</i></a></li>
                         </ul>

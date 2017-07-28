@@ -259,7 +259,6 @@ body{font-family: Arial, Helvetica, sans-serif;background-color: #e9eaed;color: 
   position: absolute;
   margin-top: -95px;
   width: 100%;
-
 }
 .timelineUploadBG {
   position: absolute;
@@ -267,7 +266,6 @@ body{font-family: Arial, Helvetica, sans-serif;background-color: #e9eaed;color: 
   margin-left: 85%;
   height: 32px;
   width: 32px;
-
 }
 #timelineNav {
   border: 1px solid #d6d7da;
@@ -277,13 +275,14 @@ body{font-family: Arial, Helvetica, sans-serif;background-color: #e9eaed;color: 
   position: relative;
 }
 .uploadFile {
-
   background: url('../../Public/teste.png') no-repeat;
   background-size: 100%;
   height: 32px;
   width: 32px;
   overflow: hidden;
   cursor: pointer;
+  background-color: rgba(255,255,255,.7);
+  border-radius: 5px;
 }
 .uploadFile input {
   filter: alpha(opacity=0);
@@ -293,4 +292,20 @@ body{font-family: Arial, Helvetica, sans-serif;background-color: #e9eaed;color: 
 .custom-file-input {
   height: 25px;
   cursor: pointer;
+}
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }

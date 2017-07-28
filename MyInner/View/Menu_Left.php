@@ -18,17 +18,20 @@
 
                             <!-- timeline background -->
                             <div id="timelineShade" style="display: none">
-                                <form id="bgimageform" method="post" enctype="multipart/form-data" action="image_upload_background.php">
+                                <form id="bgimageform" method="post" enctype="multipart/form-data" action="#">
                                     <div class="uploadFile timelineUploadBG">
-                                        <a name="photoimg" id="bgphotoimg" class="custom-file-input" href="#" data-toggle="modal" data-target="#myModal"></a>
+                                        <a  name="photoimg" id="bgphotoimg" class="custom-file-input btn" data-toggle="modal" data-target=".ModalUpdateFoto"></a>
                                     </div>
                                 </form>
                             </div>
 
                             <!-- timeline profile picture -->
                             <div id="timelineProfilePic">
-                                <img src="../Assets/img/Wendreo.jpg" class="bgImage" style="width: 100%;height: 100%">
+                                <img src="../Assets/img/<?php echo $_SESSION['NOME_USER']?>.jpg" class="bgImage" style="width: 100%;height: 100%">
+
                             </div>
+
+
 
                         </div>
                     </div>
@@ -42,7 +45,7 @@
                 <hr>
                 <!-- Accordion -->
                 <div class="w3-white">
-                    <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heartbeat fa-fw w3-margin-right"></i> Minhas Avaliações</button>
+                        <button onclick="dropDown('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-heartbeat fa-fw w3-margin-right"></i> Minhas Avaliações</button>
                     <div id="Demo1" class="w3-hide w3-container">
                         <br>
 
@@ -67,34 +70,7 @@
                         </div>
                         <br>
                     </div><!-- Demo1 -->
-                    <button onclick="dropDown('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Meus Avaliados</button>
-                    <div id="Demo2" class="w3-hide w3-container">
-                        <p>Some other text..</p>
-                    </div><!-- Demo2 -->
-                    <button onclick="dropDown('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-                    <div id="Demo3" class="w3-hide w3-container">
-                        <div class="w3-row-padding">
-                            <br>
-                            <div class="w3-half">
-                                <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
-                            </div>
-                            <div class="w3-half">
-                                <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-                            </div>
-                            <div class="w3-half">
-                                <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
-                            </div>
-                            <div class="w3-half">
-                                <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
-                            </div>
-                            <div class="w3-half">
-                                <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-                            </div>
-                            <div class="w3-half">
-                                <img src="/w3images/fjords.jpg" style="width:100%" class="w3-margin-bottom">
-                            </div>
-                        </div>
-                    </div> <!-- Demo3 -->
+                     <!-- Demo3 -->
                 </div>
                 <hr>
 
@@ -110,7 +86,8 @@
                          <i class="fa fa-remove"></i>
                      </span>
                             <p><strong>Hey!</strong></p>
-                            <p>People are looking at your profile. Find out who.</p>
+                            <p>Fique atento pois quando nossa equipe precisar comunicar-se com você faremos atravez deste espeço !
+                            </p>
                         </div>
                         <!-- Alert Box -->
                     </div>
